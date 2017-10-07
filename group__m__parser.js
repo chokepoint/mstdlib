@@ -1,7 +1,7 @@
 var group__m__parser =
 [
     [ "M_parser_t", "group__m__parser.html#ga60164be64f8c962c795e5927642fc473", null ],
-    [ "M_parser_predicate_func", "group__m__parser.html#gaf02bf52755e0b9fc5d18dccd81ba55d0", null ],
+    [ "M_parser_predicate_func", "group__m__parser.html#ga07074eb1937d1844b96d4b81c289d4eb", null ],
     [ "M_PARSER_FLAGS", "group__m__parser.html#ga5f283601804b657a199f6574996ccf87", [
       [ "M_PARSER_FLAG_NONE", "group__m__parser.html#gga5f283601804b657a199f6574996ccf87a5879ad8c9fea3f4031268d7917b03933", null ],
       [ "M_PARSER_FLAG_TRACKLINES", "group__m__parser.html#gga5f283601804b657a199f6574996ccf87a4dd69b089e5b923f02bf2c38afd32c11", null ]
@@ -114,6 +114,14 @@ var group__m__parser =
     [ "M_parser_read_parser_chr_predicate", "group__m__parser.html#gae16690c90e83c136a2252df4ce5a7b69", null ],
     [ "M_parser_read_parser_mark", "group__m__parser.html#ga53670fe8b46c97cca6fb2b91165a9b1d", null ],
     [ "M_parser_read_stxetxlrc_message", "group__m__parser.html#ga92fee6f3045a04e33a5c075f09e72ba3", null ],
+    [ "M_parser_is_predicate", "group__m__parser.html#gaadf16d5f9fafe29fecb3648f652909bc", null ],
+    [ "M_parser_is_chr_predicate", "group__m__parser.html#gaa88442d7f03374ae9a1e331a6a438dcd", null ],
+    [ "M_parser_is_charset", "group__m__parser.html#gaee24382838045df85d9a2c5fabad273e", null ],
+    [ "M_parser_is_str_charset", "group__m__parser.html#gaefa200381fcfe8b6d90722b445ddfce8", null ],
+    [ "M_parser_is_not_predicate", "group__m__parser.html#ga6793576c9c5c8aca9f376f7e9a7a28a1", null ],
+    [ "M_parser_is_not_chr_predicate", "group__m__parser.html#ga4c4ff475ade6a092401a72479a1d7238", null ],
+    [ "M_parser_is_not_charset", "group__m__parser.html#gabc8435d6e2e41ec21c14e6965adeb580", null ],
+    [ "M_parser_is_not_str_charset", "group__m__parser.html#gab16f381ae01e5a47d36cb3b36c7ab3cc", null ],
     [ "M_parser_split", "group__m__parser.html#gaff3a3e053b6e66cdc20919360867ac57", null ],
     [ "M_parser_split_free", "group__m__parser.html#ga2f40799b9f60ee628d4b9aaa2523109e", null ]
 ];
