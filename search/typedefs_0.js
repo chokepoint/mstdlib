@@ -49,6 +49,8 @@ var searchData=
   ['m_5fhash_5fu64bin_5ft',['M_hash_u64bin_t',['../group__m__hash__u64bin.html#ga72d70c95b207349952beca8d58640fdc',1,'m_hash_u64bin.h']]],
   ['m_5fhash_5fu64str_5fenum_5ft',['M_hash_u64str_enum_t',['../group__m__hash__u64str.html#ga9552d849fb592091c8d01f384ba3758f',1,'m_hash_u64str.h']]],
   ['m_5fhash_5fu64str_5ft',['M_hash_u64str_t',['../group__m__hash__u64str.html#gae127f925ec502c61f07988bcf8d2eb6e',1,'m_hash_u64str.h']]],
+  ['m_5fhash_5fu64u64_5fenum_5ft',['M_hash_u64u64_enum_t',['../group__m__hash__u64u64.html#ga65af65736b782ef14923ecd292824099',1,'m_hash_u64u64.h']]],
+  ['m_5fhash_5fu64u64_5ft',['M_hash_u64u64_t',['../group__m__hash__u64u64.html#ga7a51b34e09a9bc0e1138f0509d3ab516',1,'m_hash_u64u64.h']]],
   ['m_5fhash_5fu64vp_5fenum_5ft',['M_hash_u64vp_enum_t',['../group__m__hash__u64vp.html#gae9ca5fdb1b6cac966f7ae08c6fba94d3',1,'m_hash_u64vp.h']]],
   ['m_5fhash_5fu64vp_5ft',['M_hash_u64vp_t',['../group__m__hash__u64vp.html#ga80ed7990ac720b2c6892e277dd663f4f',1,'m_hash_u64vp.h']]],
   ['m_5fhashtable_5fduplicate_5ffunc',['M_hashtable_duplicate_func',['../group__m__hashtable__generic.html#gac13f5eca46d9d69af7ba23104c77ffa4',1,'m_hashtable.h']]],
