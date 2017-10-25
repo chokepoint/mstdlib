@@ -1,6 +1,7 @@
 var group__m__io__jni =
 [
     [ "M_io_jni_init", "group__m__io__jni.html#ga14f87264c43ed0bb657bd224b5fea176", null ],
+    [ "M_io_jni_android_init", "group__m__io__jni.html#gac9a07d12485dabfd64a38dd6cc64e5f8", null ],
     [ "M_io_jni_getenv", "group__m__io__jni.html#gacc8796d93ef5f2a79c1f09c06738f02d", null ],
     [ "M_io_jni_debug", "group__m__io__jni.html#ga25e6ef10c73b9afaee79f9da10d6e2c8", null ],
     [ "M_io_jni_find_class", "group__m__io__jni.html#gae1af884362893a89d88bef50e9202759", null ],

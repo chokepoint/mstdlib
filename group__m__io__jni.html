@@ -105,6 +105,8 @@ $(document).ready(function(){initNavTree('group__m__io__jni.html','');});
 Functions</h2></td></tr>
 <tr class="memitem:ga14f87264c43ed0bb657bd224b5fea176"><td class="memItemLeft" align="right" valign="top">M_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io__jni.html#ga14f87264c43ed0bb657bd224b5fea176">M_io_jni_init</a> (JavaVM *Jvm)</td></tr>
 <tr class="separator:ga14f87264c43ed0bb657bd224b5fea176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac9a07d12485dabfd64a38dd6cc64e5f8"><td class="memItemLeft" align="right" valign="top">M_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io__jni.html#gac9a07d12485dabfd64a38dd6cc64e5f8">M_io_jni_android_init</a> (jobject connectivity_manager)</td></tr>
+<tr class="separator:gac9a07d12485dabfd64a38dd6cc64e5f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacc8796d93ef5f2a79c1f09c06738f02d"><td class="memItemLeft" align="right" valign="top">JNIEnv *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io__jni.html#gacc8796d93ef5f2a79c1f09c06738f02d">M_io_jni_getenv</a> (void)</td></tr>
 <tr class="separator:gacc8796d93ef5f2a79c1f09c06738f02d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga25e6ef10c73b9afaee79f9da10d6e2c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io__jni.html#ga25e6ef10c73b9afaee79f9da10d6e2c8">M_io_jni_debug</a> (const char *fmt,...)</td></tr>
@@ -192,7 +194,33 @@ Functions</h2></td></tr>
 <p>This implementation only supports a single Java VM instance, globally.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">Jvm</td><td>Initialized JavaVM to use. Must be specified. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Jvm</td><td>Initialized JavaVM to use. Must be specified. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>M_TRUE on success, M_FALSE on failure. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gac9a07d12485dabfd64a38dd6cc64e5f8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">M_bool M_io_jni_android_init </td>
+          <td>(</td>
+          <td class="paramtype">jobject&#160;</td>
+          <td class="paramname"><em>connectivity_manager</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initialization function to initialize the io system for use on Android.</p>
+<p>M_io_jni_init must be called before this function. This should only be called when building for Android.</p>
+<p>This function must be called before DNS resolution will work on Android 8 (Oreo) or newer when built targeting SDK 26. Also, the ACCESS_NETWORK_STATE permission must be present in the Android application.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">connectivity_manager</td><td>Android connectivity manager. Can be accessed in Java from a Context like so: (ConnectivityManager)context.getSystemService(Context.CONNECTIVITY_SERVICE);</td></tr>
   </table>
   </dd>
 </dl>
@@ -1878,7 +1906,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Oct 24 2017 21:33:48 for Mstdlib-1.0.0 by
+    <li class="footer">Generated on Wed Oct 25 2017 15:13:04 for Mstdlib-1.0.0 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
