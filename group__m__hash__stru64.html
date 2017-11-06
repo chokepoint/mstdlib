@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Mstdlib-1.0.0: Hashtable - String/Void Pointer</title>
+<title>Mstdlib-1.0.0: Hashtable - String/uint64</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -76,7 +76,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('group__m__hash__strvp.html','');});
+$(document).ready(function(){initNavTree('group__m__hash__stru64.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -99,102 +99,104 @@ $(document).ready(function(){initNavTree('group__m__hash__strvp.html','');});
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Hashtable - String/Void Pointer<div class="ingroups"><a class="el" href="group__m__hashtable.html">Hashtable</a></div></div>  </div>
+<div class="title">Hashtable - String/uint64<div class="ingroups"><a class="el" href="group__m__hashtable.html">Hashtable</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gad3dd7a4bb94ce3af33d4ec56cc080f84"><td class="memItemLeft" align="right" valign="top">typedef struct M_hash_strvp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a></td></tr>
-<tr class="separator:gad3dd7a4bb94ce3af33d4ec56cc080f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabec51fe943bc209ab0a21b428a352d71"><td class="memItemLeft" align="right" valign="top">typedef struct M_hash_strvp_enum&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__strvp.html#gabec51fe943bc209ab0a21b428a352d71">M_hash_strvp_enum_t</a></td></tr>
-<tr class="separator:gabec51fe943bc209ab0a21b428a352d71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga864c212c70c9914c2d4db8274368a982"><td class="memItemLeft" align="right" valign="top">typedef struct M_hash_stru64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a></td></tr>
+<tr class="separator:ga864c212c70c9914c2d4db8274368a982"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga00133abdfb9c573b73b6ff186902bc3d"><td class="memItemLeft" align="right" valign="top">typedef struct M_hash_stru64_enum&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__stru64.html#ga00133abdfb9c573b73b6ff186902bc3d">M_hash_stru64_enum_t</a></td></tr>
+<tr class="separator:ga00133abdfb9c573b73b6ff186902bc3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:gaea231eadb5a86eaf4661352d01d53a3c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__strvp.html#gaea231eadb5a86eaf4661352d01d53a3c">M_hash_strvp_flags_t</a> { <br/>
-&#160;&#160;<a class="el" href="group__m__hash__strvp.html#ggaea231eadb5a86eaf4661352d01d53a3caa8d4dd8710d53593877cb4a64ed881e0">M_HASH_STRVP_NONE</a> = 0, 
+<tr class="memitem:ga132cc60bb60c92f92ee8f62a1588325b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__stru64.html#ga132cc60bb60c92f92ee8f62a1588325b">M_hash_stru64_flags_t</a> { <br/>
+&#160;&#160;<a class="el" href="group__m__hash__stru64.html#gga132cc60bb60c92f92ee8f62a1588325bae272e3b958fbaeb28893e91c044b27bb">M_HASH_STRU64_NONE</a> = 0, 
 <br/>
-&#160;&#160;<a class="el" href="group__m__hash__strvp.html#ggaea231eadb5a86eaf4661352d01d53a3ca60ed08802a99b059ef7364ae243bf1ce">M_HASH_STRVP_CASECMP</a> = 1 &lt;&lt; 0, 
+&#160;&#160;<a class="el" href="group__m__hash__stru64.html#gga132cc60bb60c92f92ee8f62a1588325ba46571c491e860cca02a30b1da8145a86">M_HASH_STRU64_CASECMP</a> = 1 &lt;&lt; 0, 
 <br/>
-&#160;&#160;<a class="el" href="group__m__hash__strvp.html#ggaea231eadb5a86eaf4661352d01d53a3cab55d45c906fb55d161bdd1f02067bc93">M_HASH_STRVP_KEYS_UPPER</a> = 1 &lt;&lt; 1, 
+&#160;&#160;<a class="el" href="group__m__hash__stru64.html#gga132cc60bb60c92f92ee8f62a1588325ba5b8ea6344775c92860f5af0b9fe08587">M_HASH_STRU64_KEYS_UPPER</a> = 1 &lt;&lt; 1, 
 <br/>
-&#160;&#160;<a class="el" href="group__m__hash__strvp.html#ggaea231eadb5a86eaf4661352d01d53a3ca8d533bb9c832abc6c28a98367b333b30">M_HASH_STRVP_KEYS_LOWER</a> = 1 &lt;&lt; 2, 
+&#160;&#160;<a class="el" href="group__m__hash__stru64.html#gga132cc60bb60c92f92ee8f62a1588325ba768eb5938469ea8678c775ca92449d79">M_HASH_STRU64_KEYS_LOWER</a> = 1 &lt;&lt; 2, 
 <br/>
-&#160;&#160;<a class="el" href="group__m__hash__strvp.html#ggaea231eadb5a86eaf4661352d01d53a3cacf169d7a9dd684e175879d8c1f919a2f">M_HASH_STRVP_KEYS_ORDERED</a> = 1 &lt;&lt; 3, 
+&#160;&#160;<a class="el" href="group__m__hash__stru64.html#gga132cc60bb60c92f92ee8f62a1588325ba3143422a95e1528584f65273373cda80">M_HASH_STRU64_KEYS_ORDERED</a> = 1 &lt;&lt; 1, 
 <br/>
-&#160;&#160;<a class="el" href="group__m__hash__strvp.html#ggaea231eadb5a86eaf4661352d01d53a3cae536686119549d6d98edf42ceded1fa6">M_HASH_STRVP_KEYS_SORTASC</a> = 1 &lt;&lt; 4, 
+&#160;&#160;<a class="el" href="group__m__hash__stru64.html#gga132cc60bb60c92f92ee8f62a1588325bad5ef4519b039c05894ae6a519bac41f2">M_HASH_STRU64_KEYS_SORTASC</a> = 1 &lt;&lt; 2, 
 <br/>
-&#160;&#160;<a class="el" href="group__m__hash__strvp.html#ggaea231eadb5a86eaf4661352d01d53a3cab38a10ef36b022132aa3b7cf8f00ca23">M_HASH_STRVP_KEYS_SORTDESC</a> = 1 &lt;&lt; 5, 
+&#160;&#160;<a class="el" href="group__m__hash__stru64.html#gga132cc60bb60c92f92ee8f62a1588325ba2d01d12fe4b4f2e2457499de5c399777">M_HASH_STRU64_KEYS_SORTDESC</a> = 1 &lt;&lt; 3, 
 <br/>
-&#160;&#160;<a class="el" href="group__m__hash__strvp.html#ggaea231eadb5a86eaf4661352d01d53a3cacebef10711696aae259c9e993396417a">M_HASH_STRVP_MULTI_VALUE</a> = 1 &lt;&lt; 6, 
+&#160;&#160;<a class="el" href="group__m__hash__stru64.html#gga132cc60bb60c92f92ee8f62a1588325bad64accfdd018fef793b024099784fbf1">M_HASH_STRU64_MULTI_VALUE</a> = 1 &lt;&lt; 4, 
 <br/>
-&#160;&#160;<a class="el" href="group__m__hash__strvp.html#ggaea231eadb5a86eaf4661352d01d53a3ca8503e37682c127a22b498702f64ca5fb">M_HASH_STRVP_MULTI_GETLAST</a> = 1 &lt;&lt; 7
+&#160;&#160;<a class="el" href="group__m__hash__stru64.html#gga132cc60bb60c92f92ee8f62a1588325baf0540ed3c2e4b7b1bb1608171a518350">M_HASH_STRU64_MULTI_GETLAST</a> = 1 &lt;&lt; 5
 <br/>
  }</td></tr>
-<tr class="separator:gaea231eadb5a86eaf4661352d01d53a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ga132cc60bb60c92f92ee8f62a1588325b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga4d3315ca1d4dc288573b08637bb85b67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__strvp.html#ga4d3315ca1d4dc288573b08637bb85b67">M_hash_strvp_create</a> (size_t size, M_uint8 fillpct, M_uint32 flags, void(*destroy_func)(void *)) M_MALLOC_ALIASED</td></tr>
-<tr class="separator:ga4d3315ca1d4dc288573b08637bb85b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga486ad629d6bae87ab92683b65b68ae85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__strvp.html#ga486ad629d6bae87ab92683b65b68ae85">M_hash_strvp_destroy</a> (<a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a> *h, M_bool destroy_vals) M_FREE(1)</td></tr>
-<tr class="separator:ga486ad629d6bae87ab92683b65b68ae85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab53669d409c7725cb8a1f89d5f2fe30d"><td class="memItemLeft" align="right" valign="top">M_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__strvp.html#gab53669d409c7725cb8a1f89d5f2fe30d">M_hash_strvp_insert</a> (<a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a> *h, const char *key, void *value)</td></tr>
-<tr class="separator:gab53669d409c7725cb8a1f89d5f2fe30d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8ad1b782774143c92a5ea3c2dcaaa946"><td class="memItemLeft" align="right" valign="top">M_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__strvp.html#ga8ad1b782774143c92a5ea3c2dcaaa946">M_hash_strvp_remove</a> (<a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a> *h, const char *key, M_bool destroy_vals)</td></tr>
-<tr class="separator:ga8ad1b782774143c92a5ea3c2dcaaa946"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa354b75e8cc92460ab183ddaaf991d38"><td class="memItemLeft" align="right" valign="top">M_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__strvp.html#gaa354b75e8cc92460ab183ddaaf991d38">M_hash_strvp_get</a> (const <a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a> *h, const char *key, void **value)</td></tr>
-<tr class="separator:gaa354b75e8cc92460ab183ddaaf991d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga41421fd1fecc9a8b91bff7fd1a3a52a3"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__strvp.html#ga41421fd1fecc9a8b91bff7fd1a3a52a3">M_hash_strvp_get_direct</a> (const <a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a> *h, const char *key)</td></tr>
-<tr class="separator:ga41421fd1fecc9a8b91bff7fd1a3a52a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabf108ee26435ca19ff095a632eeb220e"><td class="memItemLeft" align="right" valign="top">M_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__strvp.html#gabf108ee26435ca19ff095a632eeb220e">M_hash_strvp_multi_len</a> (const <a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a> *h, const char *key, size_t *len)</td></tr>
-<tr class="separator:gabf108ee26435ca19ff095a632eeb220e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga54cd85474d3a20f83fd29276b0be4ec6"><td class="memItemLeft" align="right" valign="top">M_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__strvp.html#ga54cd85474d3a20f83fd29276b0be4ec6">M_hash_strvp_multi_get</a> (const <a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a> *h, const char *key, size_t idx, void **value)</td></tr>
-<tr class="separator:ga54cd85474d3a20f83fd29276b0be4ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae9387d56113ced1fc737ec458c391977"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__strvp.html#gae9387d56113ced1fc737ec458c391977">M_hash_strvp_multi_get_direct</a> (const <a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a> *h, const char *key, size_t idx)</td></tr>
-<tr class="separator:gae9387d56113ced1fc737ec458c391977"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabf245b442c60dfc3432373a4a09cb7be"><td class="memItemLeft" align="right" valign="top">M_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__strvp.html#gabf245b442c60dfc3432373a4a09cb7be">M_hash_strvp_multi_remove</a> (<a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a> *h, const char *key, size_t idx, M_bool destroy_vals)</td></tr>
-<tr class="separator:gabf245b442c60dfc3432373a4a09cb7be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4d99305a4b0224f8140a747cf1e46821"><td class="memItemLeft" align="right" valign="top">M_uint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__strvp.html#ga4d99305a4b0224f8140a747cf1e46821">M_hash_strvp_size</a> (const <a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a> *h)</td></tr>
-<tr class="separator:ga4d99305a4b0224f8140a747cf1e46821"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafa48846e13369f9db8398e72989295cc"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__strvp.html#gafa48846e13369f9db8398e72989295cc">M_hash_strvp_num_collisions</a> (const <a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a> *h)</td></tr>
-<tr class="separator:gafa48846e13369f9db8398e72989295cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga062e718441342c25357f3f4e38d2170e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__strvp.html#ga062e718441342c25357f3f4e38d2170e">M_hash_strvp_num_expansions</a> (const <a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a> *h)</td></tr>
-<tr class="separator:ga062e718441342c25357f3f4e38d2170e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac25abe6054f5d1739355d6256fd0bcd1"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__strvp.html#gac25abe6054f5d1739355d6256fd0bcd1">M_hash_strvp_num_keys</a> (const <a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a> *h)</td></tr>
-<tr class="separator:gac25abe6054f5d1739355d6256fd0bcd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab69706d089f4fb48f16ce76f0e08b61a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__strvp.html#gab69706d089f4fb48f16ce76f0e08b61a">M_hash_strvp_enumerate</a> (const <a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a> *h, <a class="el" href="group__m__hash__strvp.html#gabec51fe943bc209ab0a21b428a352d71">M_hash_strvp_enum_t</a> **hashenum)</td></tr>
-<tr class="separator:gab69706d089f4fb48f16ce76f0e08b61a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad56b86c2a2d56972d93bd657f8c9453a"><td class="memItemLeft" align="right" valign="top">M_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__strvp.html#gad56b86c2a2d56972d93bd657f8c9453a">M_hash_strvp_enumerate_next</a> (const <a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a> *h, <a class="el" href="group__m__hash__strvp.html#gabec51fe943bc209ab0a21b428a352d71">M_hash_strvp_enum_t</a> *hashenum, const char **key, void **value)</td></tr>
-<tr class="separator:gad56b86c2a2d56972d93bd657f8c9453a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1ce85e548c1826a088ba2eb7b14c8b09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__strvp.html#ga1ce85e548c1826a088ba2eb7b14c8b09">M_hash_strvp_enumerate_free</a> (<a class="el" href="group__m__hash__strvp.html#gabec51fe943bc209ab0a21b428a352d71">M_hash_strvp_enum_t</a> *hashenum)</td></tr>
-<tr class="separator:ga1ce85e548c1826a088ba2eb7b14c8b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1e5dabf4c2d9a9e1aee2373f0a02cd31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__strvp.html#ga1e5dabf4c2d9a9e1aee2373f0a02cd31">M_hash_strvp_merge</a> (<a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a> **dest, <a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a> *src) M_FREE(2)</td></tr>
-<tr class="separator:ga1e5dabf4c2d9a9e1aee2373f0a02cd31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2b1ebc4c078b8fa62dc229a803293079"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__stru64.html#ga2b1ebc4c078b8fa62dc229a803293079">M_hash_stru64_create</a> (size_t size, M_uint8 fillpct, M_uint32 flags) M_MALLOC</td></tr>
+<tr class="separator:ga2b1ebc4c078b8fa62dc229a803293079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf3f4a57db685291771d6ff2832f067db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__stru64.html#gaf3f4a57db685291771d6ff2832f067db">M_hash_stru64_destroy</a> (<a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *h) M_FREE(1)</td></tr>
+<tr class="separator:gaf3f4a57db685291771d6ff2832f067db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga02a218b30f81874ead0fe5b5b2415068"><td class="memItemLeft" align="right" valign="top">M_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__stru64.html#ga02a218b30f81874ead0fe5b5b2415068">M_hash_stru64_insert</a> (<a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *h, const char *key, M_uint64 value)</td></tr>
+<tr class="separator:ga02a218b30f81874ead0fe5b5b2415068"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga139a250c2a7d3e34938b35c32730d3b8"><td class="memItemLeft" align="right" valign="top">M_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__stru64.html#ga139a250c2a7d3e34938b35c32730d3b8">M_hash_stru64_remove</a> (<a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *h, const char *key)</td></tr>
+<tr class="separator:ga139a250c2a7d3e34938b35c32730d3b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga30f139d6c88f53178c352a794298365e"><td class="memItemLeft" align="right" valign="top">M_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__stru64.html#ga30f139d6c88f53178c352a794298365e">M_hash_stru64_get</a> (const <a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *h, const char *key, M_uint64 *value)</td></tr>
+<tr class="separator:ga30f139d6c88f53178c352a794298365e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb9e205d65b1d9e8f5a54dc2987a3cfa"><td class="memItemLeft" align="right" valign="top">M_uint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__stru64.html#gaeb9e205d65b1d9e8f5a54dc2987a3cfa">M_hash_stru64_get_direct</a> (const <a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *h, const char *key)</td></tr>
+<tr class="separator:gaeb9e205d65b1d9e8f5a54dc2987a3cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0a09a790e469acfc19af4fc3cf7537c2"><td class="memItemLeft" align="right" valign="top">M_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__stru64.html#ga0a09a790e469acfc19af4fc3cf7537c2">M_hash_stru64_multi_len</a> (const <a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *h, const char *key, size_t *len)</td></tr>
+<tr class="separator:ga0a09a790e469acfc19af4fc3cf7537c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5c9bd891ca996aacadbe57db503e5a4e"><td class="memItemLeft" align="right" valign="top">M_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__stru64.html#ga5c9bd891ca996aacadbe57db503e5a4e">M_hash_stru64_multi_get</a> (const <a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *h, const char *key, size_t idx, M_uint64 *value)</td></tr>
+<tr class="separator:ga5c9bd891ca996aacadbe57db503e5a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga535e36af0dd6e9263fd9613b382b6819"><td class="memItemLeft" align="right" valign="top">M_uint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__stru64.html#ga535e36af0dd6e9263fd9613b382b6819">M_hash_stru64_multi_get_direct</a> (const <a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *h, const char *key, size_t idx)</td></tr>
+<tr class="separator:ga535e36af0dd6e9263fd9613b382b6819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae5a1c21b174c3136cd44351d5c2a5e22"><td class="memItemLeft" align="right" valign="top">M_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__stru64.html#gae5a1c21b174c3136cd44351d5c2a5e22">M_hash_stru64_multi_remove</a> (<a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *h, const char *key, size_t idx)</td></tr>
+<tr class="separator:gae5a1c21b174c3136cd44351d5c2a5e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7ad4dff6fe48dad30719c60bfef4959e"><td class="memItemLeft" align="right" valign="top">M_uint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__stru64.html#ga7ad4dff6fe48dad30719c60bfef4959e">M_hash_stru64_size</a> (const <a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *h)</td></tr>
+<tr class="separator:ga7ad4dff6fe48dad30719c60bfef4959e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad399ea8cf09d6f0b6daf206215fb707f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__stru64.html#gad399ea8cf09d6f0b6daf206215fb707f">M_hash_stru64_num_collisions</a> (const <a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *h)</td></tr>
+<tr class="separator:gad399ea8cf09d6f0b6daf206215fb707f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga35fbef333f3bfb9b01567ad933776d63"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__stru64.html#ga35fbef333f3bfb9b01567ad933776d63">M_hash_stru64_num_expansions</a> (const <a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *h)</td></tr>
+<tr class="separator:ga35fbef333f3bfb9b01567ad933776d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8e9af4c781a6999dd0e2e13526c49470"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__stru64.html#ga8e9af4c781a6999dd0e2e13526c49470">M_hash_stru64_num_keys</a> (const <a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *h)</td></tr>
+<tr class="separator:ga8e9af4c781a6999dd0e2e13526c49470"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga57d00a43b54dabac1138870fda80084f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__stru64.html#ga57d00a43b54dabac1138870fda80084f">M_hash_stru64_enumerate</a> (const <a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *h, <a class="el" href="group__m__hash__stru64.html#ga00133abdfb9c573b73b6ff186902bc3d">M_hash_stru64_enum_t</a> **hashenum)</td></tr>
+<tr class="separator:ga57d00a43b54dabac1138870fda80084f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac83fb5a3391ab1de17e542de7df65b59"><td class="memItemLeft" align="right" valign="top">M_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__stru64.html#gac83fb5a3391ab1de17e542de7df65b59">M_hash_stru64_enumerate_next</a> (const <a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *h, <a class="el" href="group__m__hash__stru64.html#ga00133abdfb9c573b73b6ff186902bc3d">M_hash_stru64_enum_t</a> *hashenum, const char **key, M_uint64 *value)</td></tr>
+<tr class="separator:gac83fb5a3391ab1de17e542de7df65b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd4bc3c501ed4d9d081c59928ee492f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__stru64.html#gabd4bc3c501ed4d9d081c59928ee492f3">M_hash_stru64_enumerate_free</a> (<a class="el" href="group__m__hash__stru64.html#ga00133abdfb9c573b73b6ff186902bc3d">M_hash_stru64_enum_t</a> *hashenum)</td></tr>
+<tr class="separator:gabd4bc3c501ed4d9d081c59928ee492f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga625a67f83a173fa33dbe2b90abe1d102"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__stru64.html#ga625a67f83a173fa33dbe2b90abe1d102">M_hash_stru64_merge</a> (<a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> **dest, <a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *src) M_FREE(2)</td></tr>
+<tr class="separator:ga625a67f83a173fa33dbe2b90abe1d102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2fe97deff77402e2dcb5b02f747c8167"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__hash__stru64.html#ga2fe97deff77402e2dcb5b02f747c8167">M_hash_stru64_duplicate</a> (const <a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *h) M_MALLOC</td></tr>
+<tr class="separator:ga2fe97deff77402e2dcb5b02f747c8167"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Hashtable, meant for storing string keys and void pointer values.</p>
-<p>References to the data will always be read-only. All keys will be duplicated by the hashtable. Values will not be duplicated. </p>
+<p>Hashtable, meant for storing string keys and uint64 values.</p>
+<p>References to the data will always be read-only. All keys and values will be duplicated by the hashtable. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="gad3dd7a4bb94ce3af33d4ec56cc080f84"></a>
+<a class="anchor" id="ga864c212c70c9914c2d4db8274368a982"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct M_hash_strvp <a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a></td>
+          <td class="memname">typedef struct M_hash_stru64 <a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="gabec51fe943bc209ab0a21b428a352d71"></a>
+<a class="anchor" id="ga00133abdfb9c573b73b6ff186902bc3d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct M_hash_strvp_enum <a class="el" href="group__m__hash__strvp.html#gabec51fe943bc209ab0a21b428a352d71">M_hash_strvp_enum_t</a></td>
+          <td class="memname">typedef struct M_hash_stru64_enum <a class="el" href="group__m__hash__stru64.html#ga00133abdfb9c573b73b6ff186902bc3d">M_hash_stru64_enum_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -202,42 +204,42 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="gaea231eadb5a86eaf4661352d01d53a3c"></a>
+<a class="anchor" id="ga132cc60bb60c92f92ee8f62a1588325b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="group__m__hash__strvp.html#gaea231eadb5a86eaf4661352d01d53a3c">M_hash_strvp_flags_t</a></td>
+          <td class="memname">enum <a class="el" href="group__m__hash__stru64.html#ga132cc60bb60c92f92ee8f62a1588325b">M_hash_stru64_flags_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Flags for controlling the behavior of the hashtable. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ggaea231eadb5a86eaf4661352d01d53a3caa8d4dd8710d53593877cb4a64ed881e0"></a>M_HASH_STRVP_NONE</em>&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga132cc60bb60c92f92ee8f62a1588325bae272e3b958fbaeb28893e91c044b27bb"></a>M_HASH_STRU64_NONE</em>&#160;</td><td class="fielddoc">
 <p>Case sensitive single value (new values replace). </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ggaea231eadb5a86eaf4661352d01d53a3ca60ed08802a99b059ef7364ae243bf1ce"></a>M_HASH_STRVP_CASECMP</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="gga132cc60bb60c92f92ee8f62a1588325ba46571c491e860cca02a30b1da8145a86"></a>M_HASH_STRU64_CASECMP</em>&#160;</td><td class="fielddoc">
 <p>Key compare is case insensitive. </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ggaea231eadb5a86eaf4661352d01d53a3cab55d45c906fb55d161bdd1f02067bc93"></a>M_HASH_STRVP_KEYS_UPPER</em>&#160;</td><td class="fielddoc">
-<p>Keys will be upper cased before being inserted. Should be used in conjunction with M_HASH_STRVP_CASECMP. </p>
+<tr><td class="fieldname"><em><a class="anchor" id="gga132cc60bb60c92f92ee8f62a1588325ba5b8ea6344775c92860f5af0b9fe08587"></a>M_HASH_STRU64_KEYS_UPPER</em>&#160;</td><td class="fielddoc">
+<p>Keys will be upper cased before being inserted. Should be used in conjunction with M_HASH_STRU64_CASECMP. </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ggaea231eadb5a86eaf4661352d01d53a3ca8d533bb9c832abc6c28a98367b333b30"></a>M_HASH_STRVP_KEYS_LOWER</em>&#160;</td><td class="fielddoc">
-<p>Keys will be lower cased before being inserted. Should be used in conjunction with M_HASH_STRVP_CASECMP. </p>
+<tr><td class="fieldname"><em><a class="anchor" id="gga132cc60bb60c92f92ee8f62a1588325ba768eb5938469ea8678c775ca92449d79"></a>M_HASH_STRU64_KEYS_LOWER</em>&#160;</td><td class="fielddoc">
+<p>Keys will be lower cased before being inserted. Should be used in conjunction with M_HASH_STRU64_CASECMP. </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ggaea231eadb5a86eaf4661352d01d53a3cacf169d7a9dd684e175879d8c1f919a2f"></a>M_HASH_STRVP_KEYS_ORDERED</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="gga132cc60bb60c92f92ee8f62a1588325ba3143422a95e1528584f65273373cda80"></a>M_HASH_STRU64_KEYS_ORDERED</em>&#160;</td><td class="fielddoc">
 <p>Keys should be ordered. Default is insertion order unless the sorted option is specified. </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ggaea231eadb5a86eaf4661352d01d53a3cae536686119549d6d98edf42ceded1fa6"></a>M_HASH_STRVP_KEYS_SORTASC</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="gga132cc60bb60c92f92ee8f62a1588325bad5ef4519b039c05894ae6a519bac41f2"></a>M_HASH_STRU64_KEYS_SORTASC</em>&#160;</td><td class="fielddoc">
 <p>When the keys are ordered sort them using the key_equality function. </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ggaea231eadb5a86eaf4661352d01d53a3cab38a10ef36b022132aa3b7cf8f00ca23"></a>M_HASH_STRVP_KEYS_SORTDESC</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="gga132cc60bb60c92f92ee8f62a1588325ba2d01d12fe4b4f2e2457499de5c399777"></a>M_HASH_STRU64_KEYS_SORTDESC</em>&#160;</td><td class="fielddoc">
 <p>When the keys are ordered sort them using the key_equality function. </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ggaea231eadb5a86eaf4661352d01d53a3cacebef10711696aae259c9e993396417a"></a>M_HASH_STRVP_MULTI_VALUE</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="gga132cc60bb60c92f92ee8f62a1588325bad64accfdd018fef793b024099784fbf1"></a>M_HASH_STRU64_MULTI_VALUE</em>&#160;</td><td class="fielddoc">
 <p>Allow keys to contain multiple values. Sorted in insertion order another sorting is specified. </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ggaea231eadb5a86eaf4661352d01d53a3ca8503e37682c127a22b498702f64ca5fb"></a>M_HASH_STRVP_MULTI_GETLAST</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="gga132cc60bb60c92f92ee8f62a1588325baf0540ed3c2e4b7b1bb1608171a518350"></a>M_HASH_STRU64_MULTI_GETLAST</em>&#160;</td><td class="fielddoc">
 <p>When using get and get_direct function get the last value from the list when allowing multiple values. The default is to get the first value. </p>
 </td></tr>
 </table>
@@ -245,12 +247,12 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ga4d3315ca1d4dc288573b08637bb85b67"></a>
+<a class="anchor" id="ga2b1ebc4c078b8fa62dc229a803293079"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a>* M_hash_strvp_create </td>
+          <td class="memname"><a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a>* M_hash_stru64_create </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>size</em>, </td>
@@ -265,13 +267,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">M_uint32&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void(*)(void *)&#160;</td>
-          <td class="paramname"><em>destroy_func</em>&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -286,36 +282,25 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Size of the hash table. If not specified as a power of 2, will be rounded up to the nearest power of 2. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">fillpct</td><td>The maximum fill percentage before the hash table is expanded. If 0 is specified, the hashtable will never expand, otherwise the value must be between 1 and 99 (recommended: 75). </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>M_hash_strvp_flags_t flags for modifying behavior. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">destroy_func</td><td>The function to be called to destroy value when the hashtable itself is destroyed. Can be NULL.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>M_hash_stru64_flags_t flags for modifying behavior.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Allocated hashtable.</dd></dl>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__m__hash__strvp.html#ga486ad629d6bae87ab92683b65b68ae85">M_hash_strvp_destroy</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__m__hash__stru64.html#gaf3f4a57db685291771d6ff2832f067db">M_hash_stru64_destroy</a> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="ga486ad629d6bae87ab92683b65b68ae85"></a>
+<a class="anchor" id="gaf3f4a57db685291771d6ff2832f067db"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void M_hash_strvp_destroy </td>
+          <td class="memname">void M_hash_stru64_destroy </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a> *&#160;</td>
-          <td class="paramname"><em>h</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *&#160;</td>
+          <td class="paramname"><em>h</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">M_bool&#160;</td>
-          <td class="paramname"><em>destroy_vals</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -323,21 +308,20 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>Hashtable to destroy </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">destroy_vals</td><td>M_TRUE if the values held by the hashtable should be destroyed. This will almost always be M_TRUE. This should only be set to M_FALSE when all values held by the hashtable are being managed externally. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="gab53669d409c7725cb8a1f89d5f2fe30d"></a>
+<a class="anchor" id="ga02a218b30f81874ead0fe5b5b2415068"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">M_bool M_hash_strvp_insert </td>
+          <td class="memname">M_bool M_hash_stru64_insert </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *&#160;</td>
           <td class="paramname"><em>h</em>, </td>
         </tr>
         <tr>
@@ -349,7 +333,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void *&#160;</td>
+          <td class="paramtype">M_uint64&#160;</td>
           <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
@@ -364,7 +348,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">h</td><td>Hashtable being referenced. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>Key to insert. A NULL or empty string is explicity disallowed. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>Value to insert into hashtable. Value will not be duplicated. The hashtable will take ownership of the value. Maybe NULL.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>Value to insert into hashtable.</td></tr>
   </table>
   </dd>
 </dl>
@@ -372,27 +356,21 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga8ad1b782774143c92a5ea3c2dcaaa946"></a>
+<a class="anchor" id="ga139a250c2a7d3e34938b35c32730d3b8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">M_bool M_hash_strvp_remove </td>
+          <td class="memname">M_bool M_hash_stru64_remove </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *&#160;</td>
           <td class="paramname"><em>h</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">M_bool&#160;</td>
-          <td class="paramname"><em>destroy_vals</em>&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -405,8 +383,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">h</td><td>Hashtable being referenced. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>Key to remove from the hashtable. A NULL or empty string is explicitly disallowed. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">destroy_vals</td><td>M_TRUE if the value held by the hashtable should be destroyed. This will almost always be M_TRUE. This should only be set to M_FALSE when the value held by the hashtable is being managed externally.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>Key to remove from the hashtable. A NULL or empty string is explicitly disallowed.</td></tr>
   </table>
   </dd>
 </dl>
@@ -414,14 +391,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gaa354b75e8cc92460ab183ddaaf991d38"></a>
+<a class="anchor" id="ga30f139d6c88f53178c352a794298365e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">M_bool M_hash_strvp_get </td>
+          <td class="memname">M_bool M_hash_stru64_get </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *&#160;</td>
           <td class="paramname"><em>h</em>, </td>
         </tr>
         <tr>
@@ -433,7 +410,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void **&#160;</td>
+          <td class="paramtype">M_uint64 *&#160;</td>
           <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
@@ -456,14 +433,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga41421fd1fecc9a8b91bff7fd1a3a52a3"></a>
+<a class="anchor" id="gaeb9e205d65b1d9e8f5a54dc2987a3cfa"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void* M_hash_strvp_get_direct </td>
+          <td class="memname">M_uint64 M_hash_stru64_get_direct </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *&#160;</td>
           <td class="paramname"><em>h</em>, </td>
         </tr>
         <tr>
@@ -480,7 +457,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Retrieve the value for a key from the hashtable, and return it directly as the return value.</p>
-<p>This cannot be used if you need to differentiate between a key that doesn't exist vs a key with a NULL value.</p>
+<p>This cannot be used if you need to differentiate between a key that doesn't exist vs a key with a 0 value.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>Hashtable being referenced. </td></tr>
@@ -492,14 +469,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gabf108ee26435ca19ff095a632eeb220e"></a>
+<a class="anchor" id="ga0a09a790e469acfc19af4fc3cf7537c2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">M_bool M_hash_strvp_multi_len </td>
+          <td class="memname">M_bool M_hash_stru64_multi_len </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *&#160;</td>
           <td class="paramname"><em>h</em>, </td>
         </tr>
         <tr>
@@ -534,14 +511,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga54cd85474d3a20f83fd29276b0be4ec6"></a>
+<a class="anchor" id="ga5c9bd891ca996aacadbe57db503e5a4e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">M_bool M_hash_strvp_multi_get </td>
+          <td class="memname">M_bool M_hash_stru64_multi_get </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *&#160;</td>
           <td class="paramname"><em>h</em>, </td>
         </tr>
         <tr>
@@ -559,7 +536,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void **&#160;</td>
+          <td class="paramtype">M_uint64 *&#160;</td>
           <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
@@ -583,14 +560,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gae9387d56113ced1fc737ec458c391977"></a>
+<a class="anchor" id="ga535e36af0dd6e9263fd9613b382b6819"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void* M_hash_strvp_multi_get_direct </td>
+          <td class="memname">M_uint64 M_hash_stru64_multi_get_direct </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *&#160;</td>
           <td class="paramname"><em>h</em>, </td>
         </tr>
         <tr>
@@ -625,14 +602,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gabf245b442c60dfc3432373a4a09cb7be"></a>
+<a class="anchor" id="gae5a1c21b174c3136cd44351d5c2a5e22"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">M_bool M_hash_strvp_multi_remove </td>
+          <td class="memname">M_bool M_hash_stru64_multi_remove </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *&#160;</td>
           <td class="paramname"><em>h</em>, </td>
         </tr>
         <tr>
@@ -645,13 +622,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>idx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">M_bool&#160;</td>
-          <td class="paramname"><em>destroy_vals</em>&#160;</td>
+          <td class="paramname"><em>idx</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -666,8 +637,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">h</td><td>Hashtable being referenced </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>Key for value to retrieve. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">idx</td><td>The index the value resides at. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">destroy_vals</td><td>M_TRUE if the value held by the hashtable should be destroyed. This will almost always be M_TRUE. This should only be set to M_FALSE when the value held by the hashtable is being managed externally.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">idx</td><td>The index the value resides at.</td></tr>
   </table>
   </dd>
 </dl>
@@ -675,14 +645,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga4d99305a4b0224f8140a747cf1e46821"></a>
+<a class="anchor" id="ga7ad4dff6fe48dad30719c60bfef4959e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">M_uint32 M_hash_strvp_size </td>
+          <td class="memname">M_uint32 M_hash_stru64_size </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *&#160;</td>
           <td class="paramname"><em>h</em></td><td>)</td>
           <td></td>
         </tr>
@@ -699,14 +669,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gafa48846e13369f9db8398e72989295cc"></a>
+<a class="anchor" id="gad399ea8cf09d6f0b6daf206215fb707f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t M_hash_strvp_num_collisions </td>
+          <td class="memname">size_t M_hash_stru64_num_collisions </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *&#160;</td>
           <td class="paramname"><em>h</em></td><td>)</td>
           <td></td>
         </tr>
@@ -723,14 +693,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga062e718441342c25357f3f4e38d2170e"></a>
+<a class="anchor" id="ga35fbef333f3bfb9b01567ad933776d63"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t M_hash_strvp_num_expansions </td>
+          <td class="memname">size_t M_hash_stru64_num_expansions </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *&#160;</td>
           <td class="paramname"><em>h</em></td><td>)</td>
           <td></td>
         </tr>
@@ -747,14 +717,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gac25abe6054f5d1739355d6256fd0bcd1"></a>
+<a class="anchor" id="ga8e9af4c781a6999dd0e2e13526c49470"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t M_hash_strvp_num_keys </td>
+          <td class="memname">size_t M_hash_stru64_num_keys </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *&#160;</td>
           <td class="paramname"><em>h</em></td><td>)</td>
           <td></td>
         </tr>
@@ -772,20 +742,20 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gab69706d089f4fb48f16ce76f0e08b61a"></a>
+<a class="anchor" id="ga57d00a43b54dabac1138870fda80084f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t M_hash_strvp_enumerate </td>
+          <td class="memname">size_t M_hash_stru64_enumerate </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *&#160;</td>
           <td class="paramname"><em>h</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__m__hash__strvp.html#gabec51fe943bc209ab0a21b428a352d71">M_hash_strvp_enum_t</a> **&#160;</td>
+          <td class="paramtype"><a class="el" href="group__m__hash__stru64.html#ga00133abdfb9c573b73b6ff186902bc3d">M_hash_stru64_enum_t</a> **&#160;</td>
           <td class="paramname"><em>hashenum</em>&#160;</td>
         </tr>
         <tr>
@@ -804,24 +774,24 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of items in the hashtable</dd></dl>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__m__hash__strvp.html#ga1ce85e548c1826a088ba2eb7b14c8b09">M_hash_strvp_enumerate_free</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__m__hash__stru64.html#gabd4bc3c501ed4d9d081c59928ee492f3">M_hash_stru64_enumerate_free</a> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="gad56b86c2a2d56972d93bd657f8c9453a"></a>
+<a class="anchor" id="gac83fb5a3391ab1de17e542de7df65b59"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">M_bool M_hash_strvp_enumerate_next </td>
+          <td class="memname">M_bool M_hash_stru64_enumerate_next </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *&#160;</td>
           <td class="paramname"><em>h</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__m__hash__strvp.html#gabec51fe943bc209ab0a21b428a352d71">M_hash_strvp_enum_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__m__hash__stru64.html#ga00133abdfb9c573b73b6ff186902bc3d">M_hash_stru64_enum_t</a> *&#160;</td>
           <td class="paramname"><em>hashenum</em>, </td>
         </tr>
         <tr>
@@ -833,7 +803,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void **&#160;</td>
+          <td class="paramtype">M_uint64 *&#160;</td>
           <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
@@ -857,14 +827,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga1ce85e548c1826a088ba2eb7b14c8b09"></a>
+<a class="anchor" id="gabd4bc3c501ed4d9d081c59928ee492f3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void M_hash_strvp_enumerate_free </td>
+          <td class="memname">void M_hash_stru64_enumerate_free </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__m__hash__strvp.html#gabec51fe943bc209ab0a21b428a352d71">M_hash_strvp_enum_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__m__hash__stru64.html#ga00133abdfb9c573b73b6ff186902bc3d">M_hash_stru64_enum_t</a> *&#160;</td>
           <td class="paramname"><em>hashenum</em></td><td>)</td>
           <td></td>
         </tr>
@@ -880,20 +850,20 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga1e5dabf4c2d9a9e1aee2373f0a02cd31"></a>
+<a class="anchor" id="ga625a67f83a173fa33dbe2b90abe1d102"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void M_hash_strvp_merge </td>
+          <td class="memname">void M_hash_stru64_merge </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a> **&#160;</td>
+          <td class="paramtype"><a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> **&#160;</td>
           <td class="paramname"><em>dest</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84">M_hash_strvp_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *&#160;</td>
           <td class="paramname"><em>src</em>&#160;</td>
         </tr>
         <tr>
@@ -912,6 +882,31 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="ga2fe97deff77402e2dcb5b02f747c8167"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a>* M_hash_stru64_duplicate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982">M_hash_stru64_t</a> *&#160;</td>
+          <td class="paramname"><em>h</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Duplicate an existing hashtable.</p>
+<p>Copying all keys and values.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>Hashtable to be copied.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Duplicated hashtable. </dd></dl>
 
 </div>
 </div>

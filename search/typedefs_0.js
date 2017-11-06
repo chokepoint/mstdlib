@@ -43,6 +43,8 @@ var searchData=
   ['m_5fhash_5fstrbin_5ft',['M_hash_strbin_t',['../group__m__hash__strbin.html#ga8c085c49e791389fd7503789c73d1923',1,'m_hash_strbin.h']]],
   ['m_5fhash_5fstridx_5fenum_5ft',['M_hash_stridx_enum_t',['../group__m__hash__stridx.html#gaebae4b9922dc8da8f482945614865ef5',1,'m_hash_stridx.h']]],
   ['m_5fhash_5fstridx_5ft',['M_hash_stridx_t',['../group__m__hash__stridx.html#ga0c108608be018cc814c5d513bff48e4c',1,'m_hash_stridx.h']]],
+  ['m_5fhash_5fstru64_5fenum_5ft',['M_hash_stru64_enum_t',['../group__m__hash__stru64.html#ga00133abdfb9c573b73b6ff186902bc3d',1,'m_hash_stru64.h']]],
+  ['m_5fhash_5fstru64_5ft',['M_hash_stru64_t',['../group__m__hash__stru64.html#ga864c212c70c9914c2d4db8274368a982',1,'m_hash_stru64.h']]],
   ['m_5fhash_5fstrvp_5fenum_5ft',['M_hash_strvp_enum_t',['../group__m__hash__strvp.html#gabec51fe943bc209ab0a21b428a352d71',1,'m_hash_strvp.h']]],
   ['m_5fhash_5fstrvp_5ft',['M_hash_strvp_t',['../group__m__hash__strvp.html#gad3dd7a4bb94ce3af33d4ec56cc080f84',1,'m_hash_strvp.h']]],
   ['m_5fhash_5fu64bin_5fenum_5ft',['M_hash_u64bin_enum_t',['../group__m__hash__u64bin.html#ga8d8e8a765e159a18fef64ab1df64ba73',1,'m_hash_u64bin.h']]],
