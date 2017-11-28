@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"group__m__sql__driver.html#ga342da36f6ae2e51f83d53ab167c02535":[0,4,6,56],
 "group__m__sql__driver.html#ga35526e347959ec40eda679f5415b0648":[0,4,6,42],
 "group__m__sql__driver.html#ga36e36e7cdc6ae305aee052223639b906":[0,4,6,3],
 "group__m__sql__driver.html#ga39f118596bd56459637bb897dac714d1":[0,4,6,32],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "group__m__sql__stmt__result.html#ggae672a1a5ceb3af4f3a01347ffd839beba97d9459c2c13f30d023d68cabfc8d9c5":[0,4,8,1,0,6],
 "group__m__sql__stmt__result.html#ggae672a1a5ceb3af4f3a01347ffd839bebaba964fed11b6741888d10f42c896e85d":[0,4,8,1,0,1],
 "group__m__sql__trace.html":[0,4,3,0],
-"group__m__sql__trace.html#ga00fe1620004784dae6a8dc4f7ed07459":[0,4,3,0,0],
-"group__m__sql__trace.html#ga01a39bb45957c3282d98284f441c57de":[0,4,3,0,18]
+"group__m__sql__trace.html#ga00fe1620004784dae6a8dc4f7ed07459":[0,4,3,0,0]
 };
