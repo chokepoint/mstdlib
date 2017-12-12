@@ -11,5 +11,12 @@ var group__m__io__hid =
     [ "M_io_hid_enum_vendorid", "group__m__io__hid.html#gac916a3d6df19b1232da2fc0ab08a4d18", null ],
     [ "M_io_hid_enum_productid", "group__m__io__hid.html#ga9c07b7df7c440615efd1c8c5886ab428", null ],
     [ "M_io_hid_create", "group__m__io__hid.html#ga51de3eead2d790d22f669210daac966d", null ],
-    [ "M_io_hid_create_one", "group__m__io__hid.html#gac0f8386773ceddc5cde4fe268ac1c1fb", null ]
+    [ "M_io_hid_create_one", "group__m__io__hid.html#gac0f8386773ceddc5cde4fe268ac1c1fb", null ],
+    [ "M_io_hid_get_manufacturer", "group__m__io__hid.html#ga1ee49bd73afe95db75eece27d1aef055", null ],
+    [ "M_io_hid_get_path", "group__m__io__hid.html#gaafb3d4cb00cbbe12d177a292964301f5", null ],
+    [ "M_io_hid_get_product", "group__m__io__hid.html#gabde10cf2d96982b6dc8d36299320c64b", null ],
+    [ "M_io_hid_get_productid", "group__m__io__hid.html#ga2dcf2d3973b626d310c325169e6e71a0", null ],
+    [ "M_io_hid_get_vendorid", "group__m__io__hid.html#gac62d6da058de1d5a25d4cc976c25c97e", null ],
+    [ "M_io_hid_get_serial", "group__m__io__hid.html#ga21fa0470c838a51f9b3813048823e2e4", null ],
+    [ "M_io_hid_get_max_report_sizes", "group__m__io__hid.html#ga19416d1713c428e5e225778c40482003", null ]
 ];

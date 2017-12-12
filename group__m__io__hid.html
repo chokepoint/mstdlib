@@ -131,6 +131,20 @@ Functions</h2></td></tr>
 <tr class="separator:ga51de3eead2d790d22f669210daac966d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac0f8386773ceddc5cde4fe268ac1c1fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__m__io.html#ga2d3bea9aaa4491c3c8dad94cf24498a2">M_io_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io__hid.html#gac0f8386773ceddc5cde4fe268ac1c1fb">M_io_hid_create_one</a> (<a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> **io_out, M_uint16 vendorid, const M_uint16 *productids, size_t num_productids, const char *serial)</td></tr>
 <tr class="separator:gac0f8386773ceddc5cde4fe268ac1c1fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1ee49bd73afe95db75eece27d1aef055"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io__hid.html#ga1ee49bd73afe95db75eece27d1aef055">M_io_hid_get_manufacturer</a> (<a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *io)</td></tr>
+<tr class="separator:ga1ee49bd73afe95db75eece27d1aef055"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaafb3d4cb00cbbe12d177a292964301f5"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io__hid.html#gaafb3d4cb00cbbe12d177a292964301f5">M_io_hid_get_path</a> (<a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *io)</td></tr>
+<tr class="separator:gaafb3d4cb00cbbe12d177a292964301f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabde10cf2d96982b6dc8d36299320c64b"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io__hid.html#gabde10cf2d96982b6dc8d36299320c64b">M_io_hid_get_product</a> (<a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *io)</td></tr>
+<tr class="separator:gabde10cf2d96982b6dc8d36299320c64b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2dcf2d3973b626d310c325169e6e71a0"><td class="memItemLeft" align="right" valign="top">M_uint16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io__hid.html#ga2dcf2d3973b626d310c325169e6e71a0">M_io_hid_get_productid</a> (<a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *io)</td></tr>
+<tr class="separator:ga2dcf2d3973b626d310c325169e6e71a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac62d6da058de1d5a25d4cc976c25c97e"><td class="memItemLeft" align="right" valign="top">M_uint16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io__hid.html#gac62d6da058de1d5a25d4cc976c25c97e">M_io_hid_get_vendorid</a> (<a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *io)</td></tr>
+<tr class="separator:gac62d6da058de1d5a25d4cc976c25c97e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga21fa0470c838a51f9b3813048823e2e4"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io__hid.html#ga21fa0470c838a51f9b3813048823e2e4">M_io_hid_get_serial</a> (<a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *io)</td></tr>
+<tr class="separator:ga21fa0470c838a51f9b3813048823e2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga19416d1713c428e5e225778c40482003"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io__hid.html#ga19416d1713c428e5e225778c40482003">M_io_hid_get_max_report_sizes</a> (<a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *io, size_t *max_input_size, size_t *max_output_size)</td></tr>
+<tr class="separator:ga19416d1713c428e5e225778c40482003"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>HID (Human Interface Device) IO functions. Typically used with USB devices.</p>
@@ -511,12 +525,205 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga1ee49bd73afe95db75eece27d1aef055"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* M_io_hid_get_manufacturer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *&#160;</td>
+          <td class="paramname"><em>io</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the HID manufacturer from an io object.</p>
+<p>Queries the highest HID layer in the stack, if there are more than one.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">io</td><td>io object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>String. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaafb3d4cb00cbbe12d177a292964301f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* M_io_hid_get_path </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *&#160;</td>
+          <td class="paramname"><em>io</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the HID path from an io object.</p>
+<p>Queries the highest HID layer in the stack, if there are more than one.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">io</td><td>io object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>String. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gabde10cf2d96982b6dc8d36299320c64b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* M_io_hid_get_product </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *&#160;</td>
+          <td class="paramname"><em>io</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the HID product from an io object.</p>
+<p>Queries the highest HID layer in the stack, if there are more than one.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">io</td><td>io object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>String. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga2dcf2d3973b626d310c325169e6e71a0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">M_uint16 M_io_hid_get_productid </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *&#160;</td>
+          <td class="paramname"><em>io</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the HID product ID from an io object.</p>
+<p>Queries the highest HID layer in the stack, if there are more than one.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">io</td><td>io object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>String. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gac62d6da058de1d5a25d4cc976c25c97e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">M_uint16 M_io_hid_get_vendorid </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *&#160;</td>
+          <td class="paramname"><em>io</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the HID vendor ID from an io object.</p>
+<p>Queries the highest HID layer in the stack, if there are more than one.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">io</td><td>io object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>String. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga21fa0470c838a51f9b3813048823e2e4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* M_io_hid_get_serial </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *&#160;</td>
+          <td class="paramname"><em>io</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the HID serial number from an io object.</p>
+<p>Queries the highest HID layer in the stack, if there are more than one.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">io</td><td>io object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>String. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga19416d1713c428e5e225778c40482003"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void M_io_hid_get_max_report_sizes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *&#160;</td>
+          <td class="paramname"><em>io</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>max_input_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>max_output_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the HID maximum input and output report sizes from an io object.</p>
+<p>The report sizes returned may be 1 byte larger than the actual report size to account for the report ID that is prepended to the data block.</p>
+<p>Queries the highest HID layer in the stack, if there are more than one.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">io</td><td>io object. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">max_input_size</td><td>Maximum input report size. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">max_output_size</td><td>Maximum output report size. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 12 2017 15:07:49 for Mstdlib-1.0.0 by
+    <li class="footer">Generated on Tue Dec 12 2017 15:23:20 for Mstdlib-1.0.0 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
