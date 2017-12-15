@@ -119,19 +119,25 @@ Functions</h2></td></tr>
 <tr class="separator:ga91ba8d0d3d4f33dedf5424bffcc39ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadd0ad00bb507b904909f6ee71c89eaf6"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io__bluetooth.html#gadd0ad00bb507b904909f6ee71c89eaf6">M_io_bluetooth_enum_mac</a> (const <a class="el" href="group__m__io__bluetooth.html#ga74fcce28147c774e0e144a7902404756">M_io_bluetooth_enum_t</a> *btenum, size_t idx)</td></tr>
 <tr class="separator:gadd0ad00bb507b904909f6ee71c89eaf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae3f5931c9384d297fca85d35446a5a1e"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io__bluetooth.html#gae3f5931c9384d297fca85d35446a5a1e">M_io_bluetooth_enum_uuid</a> (const <a class="el" href="group__m__io__bluetooth.html#ga74fcce28147c774e0e144a7902404756">M_io_bluetooth_enum_t</a> *btenum, size_t idx)</td></tr>
-<tr class="separator:gae3f5931c9384d297fca85d35446a5a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2a86729cbaf5aa562fc378f78e455d3d"><td class="memItemLeft" align="right" valign="top">M_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io__bluetooth.html#ga2a86729cbaf5aa562fc378f78e455d3d">M_io_bluetooth_enum_connected</a> (const <a class="el" href="group__m__io__bluetooth.html#ga74fcce28147c774e0e144a7902404756">M_io_bluetooth_enum_t</a> *btenum, size_t idx)</td></tr>
+<tr class="separator:ga2a86729cbaf5aa562fc378f78e455d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga821dc50917cea5568afdf45294a62886"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io__bluetooth.html#ga821dc50917cea5568afdf45294a62886">M_io_bluetooth_enum_service_name</a> (const <a class="el" href="group__m__io__bluetooth.html#ga74fcce28147c774e0e144a7902404756">M_io_bluetooth_enum_t</a> *btenum, size_t idx)</td></tr>
+<tr class="separator:ga821dc50917cea5568afdf45294a62886"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga456853141cf5a96770201f66eacdcab4"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io__bluetooth.html#ga456853141cf5a96770201f66eacdcab4">M_io_bluetooth_enum_service_uuid</a> (const <a class="el" href="group__m__io__bluetooth.html#ga74fcce28147c774e0e144a7902404756">M_io_bluetooth_enum_t</a> *btenum, size_t idx)</td></tr>
+<tr class="separator:ga456853141cf5a96770201f66eacdcab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9ac2d422d79aa588a573f63c9e1de9d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__m__io.html#ga2d3bea9aaa4491c3c8dad94cf24498a2">M_io_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io__bluetooth.html#ga9ac2d422d79aa588a573f63c9e1de9d9">M_io_bluetooth_create</a> (<a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> **io_out, const char *mac, const char *uuid)</td></tr>
 <tr class="separator:ga9ac2d422d79aa588a573f63c9e1de9d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Bluetooth IO functions</p>
+<p>Bluetooth IO functions.</p>
+<p>This is a connectivity layer and uses rfcomm. Protocols, such as AVDTP, should be implemented at a layer above this one. The generic rfcomm uuid that the vast majority of devices use is 00001101-0000-1000-8000-00805f9b34fb.</p>
 <p>Supported OS:</p>
 <ul>
 <li>Android</li>
 <li>iOS</li>
+<li>macOS</li>
 </ul>
-<p>Note: iOS only supports the External Accessory EAAccessory protocol. Devices that are part of the Made for iPhone/iPod/iPad (MFi) program. BLE is not supported on iOS at this time. </p>
+<p>Note: On iOS, this interface only supports Bluetooth Low Energy (BLE) devices. iOS also supports an Apple proprietary system known as Made for iPhone/iPod/iPad (MFi). MFi uses bluetooth but is handled differently. It's supposed though the m_io_mfi layer. MFi is also known as the External Accessory / EAAccessory protocol. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a class="anchor" id="ga74fcce28147c774e0e144a7902404756"></a>
 <div class="memitem">
@@ -160,7 +166,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Create a bluetooth enumeration object.</p>
-<p>Use to determine what bluetooth devices are connected. On some OS's this may be a list of associated devices not necessarily what's actively connected.</p>
+<p>Use to determine what bluetooth devices are connected and what services are being offered. This is a list of associated devices not necessarily what's actively connected.</p>
+<p>The enumeration is based on available services. Meaning a device may be listed multiple times if it exposes multiple services.</p>
 <dl class="section return"><dt>Returns</dt><dd>Bluetooth enumeration object. </dd></dl>
 
 </div>
@@ -282,12 +289,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gae3f5931c9384d297fca85d35446a5a1e"></a>
+<a class="anchor" id="ga2a86729cbaf5aa562fc378f78e455d3d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* M_io_bluetooth_enum_uuid </td>
+          <td class="memname">M_bool M_io_bluetooth_enum_connected </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__m__io__bluetooth.html#ga74fcce28147c774e0e144a7902404756">M_io_bluetooth_enum_t</a> *&#160;</td>
           <td class="paramname"><em>btenum</em>, </td>
@@ -305,7 +312,71 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>UUID of bluetooth device.</p>
+<p>Whether the device is connected.</p>
+<p>Not all systems are able to report the connected status making this function less useful than you would think.</p>
+<dl class="section return"><dt>Returns</dt><dd>M_TRUE if the device is connected, otherwise M_FALSE. If it is not possible to determine the connected status this function will return M_TRUE. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga821dc50917cea5568afdf45294a62886"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* M_io_bluetooth_enum_service_name </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__m__io__bluetooth.html#ga74fcce28147c774e0e144a7902404756">M_io_bluetooth_enum_t</a> *&#160;</td>
+          <td class="paramname"><em>btenum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>idx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Name of service reported by device.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">btenum</td><td>Bluetooth enumeration object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">idx</td><td>Index in bluetooth enumeration.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>String. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga456853141cf5a96770201f66eacdcab4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* M_io_bluetooth_enum_service_uuid </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__m__io__bluetooth.html#ga74fcce28147c774e0e144a7902404756">M_io_bluetooth_enum_t</a> *&#160;</td>
+          <td class="paramname"><em>btenum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>idx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Uuid of service reported by device.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">btenum</td><td>Bluetooth enumeration object. </td></tr>
@@ -351,7 +422,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">io_out</td><td>io object for communication. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mac</td><td>Required MAC of the device. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">uuid</td><td>Option UUID of the device. If not specified the first device matching the mac will be used.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uuid</td><td>Optional UUID of the device. For rfcomm (used by this io interface) the uuid is almost always 00001101-0000-1000-8000-00805f9b34fb unless the device is providing multiple services. Such as a device that can do multiple things like bar code scanner, and integrated printer. If not specified the generic rfcomm generic uuid will be used.</td></tr>
   </table>
   </dd>
 </dl>
@@ -364,7 +435,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Dec 13 2017 22:34:55 for Mstdlib-1.0.0 by
+    <li class="footer">Generated on Fri Dec 15 2017 21:09:03 for Mstdlib-1.0.0 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
