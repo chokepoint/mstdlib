@@ -1911,6 +1911,7 @@ var searchData=
   ['m_5fparser_5fread_5fstrdup',['M_parser_read_strdup',['../group__m__parser.html#ga0c17e75e8d82879f94dc47209a293ca7',1,'m_parser.h']]],
   ['m_5fparser_5fread_5fstrdup_5fcharset',['M_parser_read_strdup_charset',['../group__m__parser.html#gaadc81b291d5b29f2c237dafe8d771512',1,'m_parser.h']]],
   ['m_5fparser_5fread_5fstrdup_5fchr_5fpredicate',['M_parser_read_strdup_chr_predicate',['../group__m__parser.html#ga6b154a08db31ce892470aebdc61d0236',1,'m_parser.h']]],
+  ['m_5fparser_5fread_5fstrdup_5fhex',['M_parser_read_strdup_hex',['../group__m__parser.html#gaab8428cf93d6cdf48705518084bf9555',1,'m_parser.h']]],
   ['m_5fparser_5fread_5fstrdup_5fmark',['M_parser_read_strdup_mark',['../group__m__parser.html#ga0d79542fe6a498f071bbcc8fcb081949',1,'m_parser.h']]],
   ['m_5fparser_5fread_5fstrdup_5fpredicate',['M_parser_read_strdup_predicate',['../group__m__parser.html#gadb1485431bd0d0b299fd6d5986a1b3bb',1,'m_parser.h']]],
   ['m_5fparser_5fread_5fstrdup_5funtil',['M_parser_read_strdup_until',['../group__m__parser.html#ga73e0d3b9c2ada037c58264100a862183',1,'m_parser.h']]],

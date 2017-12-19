@@ -291,6 +291,8 @@ Functions</h2></td></tr>
 <tr class="separator:gaf274d0a0cb831e8fd41fc66d166fad48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0c17e75e8d82879f94dc47209a293ca7"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__parser.html#ga0c17e75e8d82879f94dc47209a293ca7">M_parser_read_strdup</a> (<a class="el" href="group__m__parser.html#ga60164be64f8c962c795e5927642fc473">M_parser_t</a> *parser, size_t len)</td></tr>
 <tr class="separator:ga0c17e75e8d82879f94dc47209a293ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab8428cf93d6cdf48705518084bf9555"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__parser.html#gaab8428cf93d6cdf48705518084bf9555">M_parser_read_strdup_hex</a> (<a class="el" href="group__m__parser.html#ga60164be64f8c962c795e5927642fc473">M_parser_t</a> *parser, size_t len)</td></tr>
+<tr class="separator:gaab8428cf93d6cdf48705518084bf9555"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga73e0d3b9c2ada037c58264100a862183"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__parser.html#ga73e0d3b9c2ada037c58264100a862183">M_parser_read_strdup_until</a> (<a class="el" href="group__m__parser.html#ga60164be64f8c962c795e5927642fc473">M_parser_t</a> *parser, const char *pat, M_bool eat_pat)</td></tr>
 <tr class="separator:ga73e0d3b9c2ada037c58264100a862183"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaadc81b291d5b29f2c237dafe8d771512"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__parser.html#gaadc81b291d5b29f2c237dafe8d771512">M_parser_read_strdup_charset</a> (<a class="el" href="group__m__parser.html#ga60164be64f8c962c795e5927642fc473">M_parser_t</a> *parser, const char *charset)</td></tr>
@@ -2902,6 +2904,42 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="gaab8428cf93d6cdf48705518084bf9555"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* M_parser_read_strdup_hex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__m__parser.html#ga60164be64f8c962c795e5927642fc473">M_parser_t</a> *&#160;</td>
+          <td class="paramname"><em>parser</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Read bytes (binary) from the parser, return as hex-encoded string and advance.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">parser</td><td>Parser object to read binary bytes from. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>Number of binary bytes to read from parser.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>null-terminated hex string on success, NULL if not enough bytes or other error</dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__m__parser.html#ga99ff2b65e5f78f3d32883cbd4fc28be9">M_parser_read_buf_hex</a> </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ga73e0d3b9c2ada037c58264100a862183"></a>
 <div class="memitem">
 <div class="memproto">
@@ -4203,7 +4241,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 19 2017 13:12:05 for Mstdlib-1.0.0 by
+    <li class="footer">Generated on Tue Dec 19 2017 21:22:27 for Mstdlib-1.0.0 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
