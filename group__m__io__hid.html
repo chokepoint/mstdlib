@@ -148,6 +148,8 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>HID (Human Interface Device) IO functions. Typically used with USB devices.</p>
+<p>Report IDs need to be the first byte of any data sent to a device and will be the first byte of any data received from a device. All buffer sizes report will include the extra byte for the report ID.</p>
+<p>If a device does not use report IDs 0 should be sent as the first byte of any data and will be the first byte of any read data.</p>
 <p>Supported OS:</p>
 <ul>
 <li>Windows</li>
@@ -724,7 +726,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Dec 23 2017 12:33:36 for Mstdlib-1.0.0 by
+    <li class="footer">Generated on Wed Dec 27 2017 15:09:55 for Mstdlib-1.0.0 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
