@@ -114,6 +114,7 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Functions to enable logging to a remote syslog server over TCP.</p>
+<p>This module formats messages according to the legacy BSD syslog format from RFC 3164, and adds octet-counting framing as described in RFC 6587 for transmission over TCP. This legacy format was chosen to ensure compatibility across a wide range of syslog servers.</p>
 <p>Messages are written asynchronously, as part of an existing event loop owned by the caller.</p>
 <p>Note: syslog messages are limited to 1024 chars / line. Lines longer than this will be truncated. </p>
 <h2 class="groupheader">Function Documentation</h2>
@@ -176,7 +177,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add a module to output to a remote syslog with TCP.</p>
+<p>Add a module to output to a remote syslog server over TCP.</p>
+<p>This module formats messages according to the legacy BSD syslog format from RFC 3164, and adds octet-counting framing as described in RFC 6587 for transmission over TCP. This legacy format was chosen to ensure compatibility across a wide range of syslog servers.</p>
 <p>Note: syslog messages are limited to 1024 chars / line. Lines longer than this will be truncated.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -364,7 +366,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jan 17 2018 22:42:06 for Mstdlib-1.0.0 by
+    <li class="footer">Generated on Thu Jan 18 2018 21:24:50 for Mstdlib-1.0.0 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
