@@ -1332,7 +1332,7 @@ var searchData=
   ['m_5fsql_5freport_5fhide_5fcolumn',['M_sql_report_hide_column',['../group__m__sql__report.html#gafa488e7db2277ecac6dca66c9878f3b4',1,'m_sql_report.h']]],
   ['m_5fsql_5freport_5fprocess',['M_sql_report_process',['../group__m__sql__report.html#gadd1e167bbf4cb627e13c37fcbc5c2edb',1,'m_sql_report.h']]],
   ['m_5fsql_5freport_5fprocess_5fpartial',['M_sql_report_process_partial',['../group__m__sql__report.html#ga5ca8f003494aee9d708722ecf72479c2',1,'m_sql_report.h']]],
-  ['m_5fsql_5freport_5fset_5fdelims',['M_sql_report_set_delims',['../group__m__sql__report.html#ga0d0abdbe90995357fd087a6c7537546b',1,'m_sql_report.h']]],
+  ['m_5fsql_5freport_5fset_5fdelims',['M_sql_report_set_delims',['../group__m__sql__report.html#gab74e893ce4166ae1324055e738aa61ae',1,'m_sql_report.h']]],
   ['m_5fsql_5freport_5fset_5ffetch_5fcb',['M_sql_report_set_fetch_cb',['../group__m__sql__report.html#ga40f0db9b5ce99177eeef90f65124f2ad',1,'m_sql_report.h']]],
   ['m_5fsql_5frollback_5fdelay_5fms',['M_sql_rollback_delay_ms',['../group__m__sql__helpers.html#ga968e3bfef73d9b44d862dc70553d6afb',1,'m_sql.h']]],
   ['m_5fsql_5fstmt_5fbind_5fbinary_5fconst',['M_sql_stmt_bind_binary_const',['../group__m__sql__stmt__bind.html#ga69d38695dad9fc5a15db82a7625c6940',1,'m_sql_stmt.h']]],

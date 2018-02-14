@@ -17,7 +17,7 @@ var group__m__sql__report =
     ] ],
     [ "M_sql_report_create", "group__m__sql__report.html#ga6af547bf3235cf413d5b346bd5bee2d3", null ],
     [ "M_sql_report_destroy", "group__m__sql__report.html#ga6e212972766fa09b4248760f27b61cfd", null ],
-    [ "M_sql_report_set_delims", "group__m__sql__report.html#ga0d0abdbe90995357fd087a6c7537546b", null ],
+    [ "M_sql_report_set_delims", "group__m__sql__report.html#gab74e893ce4166ae1324055e738aa61ae", null ],
     [ "M_sql_report_set_fetch_cb", "group__m__sql__report.html#ga40f0db9b5ce99177eeef90f65124f2ad", null ],
     [ "M_sql_report_cell_cb_passthru", "group__m__sql__report.html#gaf35e7071eab1dcefe45e51dd88ffe150", null ],
     [ "M_sql_report_cell_cb_int2dec", "group__m__sql__report.html#ga2379246080de048be3ab11c45d8362f3", null ],
