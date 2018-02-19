@@ -115,6 +115,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:ga7657fac3681f734efc697e3116ee8077"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga845c131d8520206a2a7a9219d1bd1932"><td class="memItemLeft" align="right" valign="top">typedef struct M_io&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a></td></tr>
 <tr class="separator:ga845c131d8520206a2a7a9219d1bd1932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9b9493ef60e89fbb37537ec239ab2724"><td class="memItemLeft" align="right" valign="top">typedef struct M_io_meta&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io.html#ga9b9493ef60e89fbb37537ec239ab2724">M_io_meta_t</a></td></tr>
+<tr class="separator:ga9b9493ef60e89fbb37537ec239ab2724"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2d3bea9aaa4491c3c8dad94cf24498a2"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group__m__io.html#ga1ea9e3c1babf09b22f2b98899db790db">M_io_error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io.html#ga2d3bea9aaa4491c3c8dad94cf24498a2">M_io_error_t</a></td></tr>
 <tr class="separator:ga2d3bea9aaa4491c3c8dad94cf24498a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad891a3fd8aebdaed3431b834c1ecf345"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group__m__io.html#ga6c99c2da0a998791d1d08ec7fe5dd3cd">M_io_state</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io.html#gad891a3fd8aebdaed3431b834c1ecf345">M_io_state_t</a></td></tr>
@@ -196,18 +198,32 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:ga89a45c257b8b62345c2bc035da6cc4d0"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io.html#ga89a45c257b8b62345c2bc035da6cc4d0">M_io_error_string</a> (<a class="el" href="group__m__io.html#ga2d3bea9aaa4491c3c8dad94cf24498a2">M_io_error_t</a> error)</td></tr>
 <tr class="separator:ga89a45c257b8b62345c2bc035da6cc4d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga82fb1edb0e33765b6bface193d91f304"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__m__io.html#ga9b9493ef60e89fbb37537ec239ab2724">M_io_meta_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io.html#ga82fb1edb0e33765b6bface193d91f304">M_io_meta_create</a> (void)</td></tr>
+<tr class="separator:ga82fb1edb0e33765b6bface193d91f304"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7586ea2e66889f608975ce17f96e6298"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io.html#ga7586ea2e66889f608975ce17f96e6298">M_io_meta_destroy</a> (<a class="el" href="group__m__io.html#ga9b9493ef60e89fbb37537ec239ab2724">M_io_meta_t</a> *meta)</td></tr>
+<tr class="separator:ga7586ea2e66889f608975ce17f96e6298"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaf3884f99346e5b40d40bc4bb08dcf5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__m__io.html#ga2d3bea9aaa4491c3c8dad94cf24498a2">M_io_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io.html#gaaf3884f99346e5b40d40bc4bb08dcf5b">M_io_read</a> (<a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *comm, unsigned char *buf, size_t buf_len, size_t *len_read)</td></tr>
 <tr class="separator:gaaf3884f99346e5b40d40bc4bb08dcf5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga169a51aae28306fe85b41d9063c83d43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__m__io.html#ga2d3bea9aaa4491c3c8dad94cf24498a2">M_io_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io.html#ga169a51aae28306fe85b41d9063c83d43">M_io_read_into_buf</a> (<a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *comm, <a class="el" href="group__m__buf.html#ga6c543ecf0004fc310faa23c6ed8b267f">M_buf_t</a> *buf)</td></tr>
 <tr class="separator:ga169a51aae28306fe85b41d9063c83d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0fb4e2775a964a263f7ec0fa50be4023"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__m__io.html#ga2d3bea9aaa4491c3c8dad94cf24498a2">M_io_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io.html#ga0fb4e2775a964a263f7ec0fa50be4023">M_io_read_into_parser</a> (<a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *comm, <a class="el" href="group__m__parser.html#ga60164be64f8c962c795e5927642fc473">M_parser_t</a> *parser)</td></tr>
 <tr class="separator:ga0fb4e2775a964a263f7ec0fa50be4023"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga19356ecc08acdc8557d315c7457fe075"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__m__io.html#ga2d3bea9aaa4491c3c8dad94cf24498a2">M_io_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io.html#ga19356ecc08acdc8557d315c7457fe075">M_io_read_meta</a> (<a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *comm, unsigned char *buf, size_t buf_len, size_t *len_read, <a class="el" href="group__m__io.html#ga9b9493ef60e89fbb37537ec239ab2724">M_io_meta_t</a> *meta)</td></tr>
+<tr class="separator:ga19356ecc08acdc8557d315c7457fe075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacb39a519c05efa8a934988fce49f1f4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__m__io.html#ga2d3bea9aaa4491c3c8dad94cf24498a2">M_io_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io.html#gacb39a519c05efa8a934988fce49f1f4f">M_io_read_into_buf_meta</a> (<a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *comm, <a class="el" href="group__m__buf.html#ga6c543ecf0004fc310faa23c6ed8b267f">M_buf_t</a> *buf, <a class="el" href="group__m__io.html#ga9b9493ef60e89fbb37537ec239ab2724">M_io_meta_t</a> *meta)</td></tr>
+<tr class="separator:gacb39a519c05efa8a934988fce49f1f4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5bd36e79dfbd676c756665570abda485"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__m__io.html#ga2d3bea9aaa4491c3c8dad94cf24498a2">M_io_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io.html#ga5bd36e79dfbd676c756665570abda485">M_io_read_into_parser_meta</a> (<a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *comm, <a class="el" href="group__m__parser.html#ga60164be64f8c962c795e5927642fc473">M_parser_t</a> *parser, <a class="el" href="group__m__io.html#ga9b9493ef60e89fbb37537ec239ab2724">M_io_meta_t</a> *meta)</td></tr>
+<tr class="separator:ga5bd36e79dfbd676c756665570abda485"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9370e9ce8923baefea2be5709708439c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__m__io.html#ga2d3bea9aaa4491c3c8dad94cf24498a2">M_io_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io.html#ga9370e9ce8923baefea2be5709708439c">M_io_read_clear</a> (<a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *io)</td></tr>
 <tr class="separator:ga9370e9ce8923baefea2be5709708439c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaed538234d26bfea6b0feef33a967860c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__m__io.html#ga2d3bea9aaa4491c3c8dad94cf24498a2">M_io_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io.html#gaed538234d26bfea6b0feef33a967860c">M_io_write</a> (<a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *comm, const unsigned char *buf, size_t buf_len, size_t *len_written)</td></tr>
 <tr class="separator:gaed538234d26bfea6b0feef33a967860c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga957eba52f32304ab07e06b516c04922a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__m__io.html#ga2d3bea9aaa4491c3c8dad94cf24498a2">M_io_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io.html#ga957eba52f32304ab07e06b516c04922a">M_io_write_from_buf</a> (<a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *comm, <a class="el" href="group__m__buf.html#ga6c543ecf0004fc310faa23c6ed8b267f">M_buf_t</a> *buf)</td></tr>
 <tr class="separator:ga957eba52f32304ab07e06b516c04922a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6c9882ef33a5098dca5bfc5808707859"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__m__io.html#ga2d3bea9aaa4491c3c8dad94cf24498a2">M_io_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io.html#ga6c9882ef33a5098dca5bfc5808707859">M_io_write_meta</a> (<a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *comm, const unsigned char *buf, size_t buf_len, size_t *len_written, <a class="el" href="group__m__io.html#ga9b9493ef60e89fbb37537ec239ab2724">M_io_meta_t</a> *meta)</td></tr>
+<tr class="separator:ga6c9882ef33a5098dca5bfc5808707859"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga05541266cd9a2c8bf4e634a092cb6bac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__m__io.html#ga2d3bea9aaa4491c3c8dad94cf24498a2">M_io_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io.html#ga05541266cd9a2c8bf4e634a092cb6bac">M_io_write_from_buf_meta</a> (<a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *comm, <a class="el" href="group__m__buf.html#ga6c543ecf0004fc310faa23c6ed8b267f">M_buf_t</a> *buf, <a class="el" href="group__m__io.html#ga9b9493ef60e89fbb37537ec239ab2724">M_io_meta_t</a> *meta)</td></tr>
+<tr class="separator:ga05541266cd9a2c8bf4e634a092cb6bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga71d86bb1d3ea521f64005e7d31f90909"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__m__io.html#ga2d3bea9aaa4491c3c8dad94cf24498a2">M_io_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io.html#ga71d86bb1d3ea521f64005e7d31f90909">M_io_accept</a> (<a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> **io_out, <a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *server_io)</td></tr>
 <tr class="separator:ga71d86bb1d3ea521f64005e7d31f90909"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gace015e28bbbf2e9b884f76d555532ef5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__m__io.html#gad891a3fd8aebdaed3431b834c1ecf345">M_io_state_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io.html#gace015e28bbbf2e9b884f76d555532ef5">M_io_get_state</a> (<a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *io)</td></tr>
@@ -260,6 +276,18 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">typedef struct M_io <a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga9b9493ef60e89fbb37537ec239ab2724"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct M_io_meta <a class="el" href="group__m__io.html#ga9b9493ef60e89fbb37537ec239ab2724">M_io_meta_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -451,6 +479,47 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga82fb1edb0e33765b6bface193d91f304"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__m__io.html#ga9b9493ef60e89fbb37537ec239ab2724">M_io_meta_t</a>* M_io_meta_create </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create an io meta data object.</p>
+<dl class="section return"><dt>Returns</dt><dd>io meta data object. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga7586ea2e66889f608975ce17f96e6298"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void M_io_meta_destroy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__m__io.html#ga9b9493ef60e89fbb37537ec239ab2724">M_io_meta_t</a> *&#160;</td>
+          <td class="paramname"><em>meta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Destory an io meta data object.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">meta</td><td>meta data object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="gaaf3884f99346e5b40d40bc4bb08dcf5b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -496,7 +565,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Result. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Result.</dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__m__io.html#ga19356ecc08acdc8557d315c7457fe075">M_io_read_meta</a> </dd></dl>
 
 </div>
 </div>
@@ -532,7 +602,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Result. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Result.</dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__m__io.html#gacb39a519c05efa8a934988fce49f1f4f">M_io_read_into_buf_meta</a> </dd></dl>
 
 </div>
 </div>
@@ -568,7 +639,153 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Result. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Result.</dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__m__io.html#ga5bd36e79dfbd676c756665570abda485">M_io_read_into_parser_meta</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga19356ecc08acdc8557d315c7457fe075"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__m__io.html#ga2d3bea9aaa4491c3c8dad94cf24498a2">M_io_error_t</a> M_io_read_meta </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *&#160;</td>
+          <td class="paramname"><em>comm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>buf_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>len_read</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__m__io.html#ga9b9493ef60e89fbb37537ec239ab2724">M_io_meta_t</a> *&#160;</td>
+          <td class="paramname"><em>meta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Read from an io object with a meta data object.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>io object. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>Buffer to store data read from io object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf_len</td><td>Lenght of provided buffer. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">len_read</td><td>Number of bytes fread from the io object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">meta</td><td>Meta data object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Result.</dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__m__io.html#gaaf3884f99346e5b40d40bc4bb08dcf5b">M_io_read</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gacb39a519c05efa8a934988fce49f1f4f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__m__io.html#ga2d3bea9aaa4491c3c8dad94cf24498a2">M_io_error_t</a> M_io_read_into_buf_meta </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *&#160;</td>
+          <td class="paramname"><em>comm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__m__buf.html#ga6c543ecf0004fc310faa23c6ed8b267f">M_buf_t</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__m__io.html#ga9b9493ef60e89fbb37537ec239ab2724">M_io_meta_t</a> *&#160;</td>
+          <td class="paramname"><em>meta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Read from an io object into an M_buf_t with a meta data object.</p>
+<p>This will read all available data into the buffer.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>io object. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>Buffer to store data read from io object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">meta</td><td>Meta data object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Result.</dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__m__io.html#ga169a51aae28306fe85b41d9063c83d43">M_io_read_into_buf</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga5bd36e79dfbd676c756665570abda485"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__m__io.html#ga2d3bea9aaa4491c3c8dad94cf24498a2">M_io_error_t</a> M_io_read_into_parser_meta </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *&#160;</td>
+          <td class="paramname"><em>comm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__m__parser.html#ga60164be64f8c962c795e5927642fc473">M_parser_t</a> *&#160;</td>
+          <td class="paramname"><em>parser</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__m__io.html#ga9b9493ef60e89fbb37537ec239ab2724">M_io_meta_t</a> *&#160;</td>
+          <td class="paramname"><em>meta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Read from an io object into an M_parser_t with a meta data object.</p>
+<p>This will read all available data into the buffer.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>io object. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">parser</td><td>Parser to store data read from io object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">meta</td><td>Meta data object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Result.</dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__m__io.html#ga0fb4e2775a964a263f7ec0fa50be4023">M_io_read_into_parser</a> </dd></dl>
 
 </div>
 </div>
@@ -642,7 +859,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Result. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Result.</dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__m__io.html#ga6c9882ef33a5098dca5bfc5808707859">M_io_write_meta</a> </dd></dl>
 
 </div>
 </div>
@@ -678,7 +896,110 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Result. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Result.</dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__m__io.html#ga05541266cd9a2c8bf4e634a092cb6bac">M_io_write_from_buf_meta</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga6c9882ef33a5098dca5bfc5808707859"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__m__io.html#ga2d3bea9aaa4491c3c8dad94cf24498a2">M_io_error_t</a> M_io_write_meta </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *&#160;</td>
+          <td class="paramname"><em>comm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>buf_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>len_written</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__m__io.html#ga9b9493ef60e89fbb37537ec239ab2724">M_io_meta_t</a> *&#160;</td>
+          <td class="paramname"><em>meta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Write data to an io object with a meta data object.</p>
+<p>This function will attempt to write as much data as possible. If not all data is written the application should wait until the next write event and then try writing more data.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>io object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>Buffer to write from. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf_len</td><td>Number of bytes in buffer to write. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">len_written</td><td>Number of bytes from the buffer written. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">meta</td><td>Meta data object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Result.</dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__m__io.html#gaed538234d26bfea6b0feef33a967860c">M_io_write</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga05541266cd9a2c8bf4e634a092cb6bac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__m__io.html#ga2d3bea9aaa4491c3c8dad94cf24498a2">M_io_error_t</a> M_io_write_from_buf_meta </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *&#160;</td>
+          <td class="paramname"><em>comm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__m__buf.html#ga6c543ecf0004fc310faa23c6ed8b267f">M_buf_t</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__m__io.html#ga9b9493ef60e89fbb37537ec239ab2724">M_io_meta_t</a> *&#160;</td>
+          <td class="paramname"><em>meta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Write data to an io object from an M_buf_t with a meta data object.</p>
+<p>This function will attempt to write as much data as possible. If not all data is written the application should wait until the next write event and then try writing more data.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">comm</td><td>io object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>Buffer to write from. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">meta</td><td>Meta data object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Result.</dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="group__m__io.html#ga957eba52f32304ab07e06b516c04922a">M_io_write_from_buf</a> </dd></dl>
 
 </div>
 </div>
@@ -942,7 +1263,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 16 2018 22:14:23 for Mstdlib-1.0.0 by
+    <li class="footer">Generated on Mon Feb 19 2018 18:22:48 for Mstdlib-1.0.0 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
