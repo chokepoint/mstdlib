@@ -171,8 +171,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga8c5405dc33555875cf9782e23652eb7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab02e3ad2ccd243ce6e994ef4ab6fc50d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io__ble.html#gab02e3ad2ccd243ce6e994ef4ab6fc50d">M_io_ble_meta_set_service</a> (<a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *io, <a class="el" href="group__m__io.html#ga9b9493ef60e89fbb37537ec239ab2724">M_io_meta_t</a> *meta, const char *service_uuid)</td></tr>
 <tr class="separator:gab02e3ad2ccd243ce6e994ef4ab6fc50d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9edc1d67a5c8a82e7f84e00c05518183"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io__ble.html#ga9edc1d67a5c8a82e7f84e00c05518183">M_io_ble_meta_set_charateristic</a> (<a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *io, <a class="el" href="group__m__io.html#ga9b9493ef60e89fbb37537ec239ab2724">M_io_meta_t</a> *meta, const char *characteristic_uuid)</td></tr>
-<tr class="separator:ga9edc1d67a5c8a82e7f84e00c05518183"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf9fa5c479c7409045d6f1c3122e95056"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io__ble.html#gaf9fa5c479c7409045d6f1c3122e95056">M_io_ble_meta_set_characteristic</a> (<a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *io, <a class="el" href="group__m__io.html#ga9b9493ef60e89fbb37537ec239ab2724">M_io_meta_t</a> *meta, const char *characteristic_uuid)</td></tr>
+<tr class="separator:gaf9fa5c479c7409045d6f1c3122e95056"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1884f2b80b9eb2c0df3b9ab44fbf6b00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io__ble.html#ga1884f2b80b9eb2c0df3b9ab44fbf6b00">M_io_ble_meta_set_write_type</a> (<a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *io, <a class="el" href="group__m__io.html#ga9b9493ef60e89fbb37537ec239ab2724">M_io_meta_t</a> *meta, <a class="el" href="group__m__io__ble.html#ga4b55a7fbad9e0c4eaf609d7b0aeb93f7">M_io_ble_wtype_t</a> type)</td></tr>
 <tr class="separator:ga1884f2b80b9eb2c0df3b9ab44fbf6b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -549,7 +549,7 @@ Functions</h2></td></tr>
 <div class="line">    wmeta = <a class="code" href="group__m__io.html#ga82fb1edb0e33765b6bface193d91f304">M_io_meta_create</a>();</div>
 <div class="line">    <a class="code" href="group__m__io__ble.html#ga1884f2b80b9eb2c0df3b9ab44fbf6b00">M_io_ble_meta_set_write_type</a>(dio, wmeta, <a class="code" href="group__m__io__ble.html#gga4b55a7fbad9e0c4eaf609d7b0aeb93f7a4a81473ebc759f08223e87c2880a5d9a">M_IO_BLE_WTYPE_REQVAL</a>);</div>
 <div class="line">    <a class="code" href="group__m__io__ble.html#gab02e3ad2ccd243ce6e994ef4ab6fc50d">M_io_ble_meta_set_service</a>(dio, wmeta, <span class="stringliteral">&quot;1111&quot;</span>);</div>
-<div class="line">    <a class="code" href="group__m__io__ble.html#ga9edc1d67a5c8a82e7f84e00c05518183">M_io_ble_meta_set_charateristic</a>(dio, wmeta, <span class="stringliteral">&quot;2222&quot;</span>);</div>
+<div class="line">    <a class="code" href="group__m__io__ble.html#gaf9fa5c479c7409045d6f1c3122e95056">M_io_ble_meta_set_characteristic</a>(dio, wmeta, <span class="stringliteral">&quot;2222&quot;</span>);</div>
 <div class="line">    <a class="code" href="group__m__event.html#ga755cf00991529e324be3f9f49a5d5476">M_event_add</a>(el, dio, events, NULL);</div>
 <div class="line"></div>
 <div class="line">    mrl = CFRunLoopGetCurrent();</div>
@@ -842,7 +842,7 @@ Functions</h2></td></tr>
 <div class="line">    <a class="code" href="group__m__io__ble.html#ga2959840fffe0831d1851e0cab4626814">M_io_ble_create</a>(&amp;dio, <span class="stringliteral">&quot;92BD9AC6-3BC8-4B24-8BF8-AE583AFE3ED4&quot;</span>, 5000);</div>
 <div class="line">    meta = <a class="code" href="group__m__io.html#ga82fb1edb0e33765b6bface193d91f304">M_io_meta_create</a>();</div>
 <div class="line">    <a class="code" href="group__m__io__ble.html#gab02e3ad2ccd243ce6e994ef4ab6fc50d">M_io_ble_meta_set_service</a>(dio, meta, <span class="stringliteral">&quot;1111&quot;</span>);</div>
-<div class="line">    <a class="code" href="group__m__io__ble.html#ga9edc1d67a5c8a82e7f84e00c05518183">M_io_ble_meta_set_charateristic</a>(dio, meta, <span class="stringliteral">&quot;2222&quot;</span>);</div>
+<div class="line">    <a class="code" href="group__m__io__ble.html#gaf9fa5c479c7409045d6f1c3122e95056">M_io_ble_meta_set_characteristic</a>(dio, meta, <span class="stringliteral">&quot;2222&quot;</span>);</div>
 <div class="line">    <a class="code" href="group__m__event.html#ga755cf00991529e324be3f9f49a5d5476">M_event_add</a>(el, dio, events, NULL);</div>
 <div class="line"></div>
 <div class="line">    mrl = CFRunLoopGetCurrent();</div>
@@ -1628,12 +1628,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga9edc1d67a5c8a82e7f84e00c05518183"></a>
+<a class="anchor" id="gaf9fa5c479c7409045d6f1c3122e95056"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void M_io_ble_meta_set_charateristic </td>
+          <td class="memname">void M_io_ble_meta_set_characteristic </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *&#160;</td>
           <td class="paramname"><em>io</em>, </td>
@@ -1716,7 +1716,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Feb 20 2018 15:04:57 for Mstdlib-1.0.0 by
+    <li class="footer">Generated on Tue Feb 20 2018 15:29:20 for Mstdlib-1.0.0 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
