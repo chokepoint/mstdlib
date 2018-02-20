@@ -21,6 +21,7 @@ var group__m__io__ble =
     [ "M_io_ble_enum_service_uuid", "group__m__io__ble.html#gaa81a546ccac631531b8e5aa86cd8ba8a", null ],
     [ "M_io_ble_enum_last_seen", "group__m__io__ble.html#ga633e0b94bcda6d3ce2f5847293a28279", null ],
     [ "M_io_ble_create", "group__m__io__ble.html#ga2959840fffe0831d1851e0cab4626814", null ],
+    [ "M_io_ble_create_with_service", "group__m__io__ble.html#ga6fe88e03f23ecdc6bf39549f31f63238", null ],
     [ "M_io_ble_set_notify", "group__m__io__ble.html#gac54443e69b72bbe58f9ad00536bcdb73", null ],
     [ "M_io_ble_get_services", "group__m__io__ble.html#gad4b09595db7db269bf09517806ffb73a", null ],
     [ "M_io_ble_get_service_characteristics", "group__m__io__ble.html#ga16bbbbf9842a4b07302eef536d6f05ce", null ],

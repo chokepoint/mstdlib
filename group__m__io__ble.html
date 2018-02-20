@@ -151,6 +151,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga633e0b94bcda6d3ce2f5847293a28279"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2959840fffe0831d1851e0cab4626814"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__m__io.html#ga2d3bea9aaa4491c3c8dad94cf24498a2">M_io_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io__ble.html#ga2959840fffe0831d1851e0cab4626814">M_io_ble_create</a> (<a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> **io_out, const char *uuid, M_uint64 timeout_ms)</td></tr>
 <tr class="separator:ga2959840fffe0831d1851e0cab4626814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6fe88e03f23ecdc6bf39549f31f63238"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__m__io.html#ga2d3bea9aaa4491c3c8dad94cf24498a2">M_io_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io__ble.html#ga6fe88e03f23ecdc6bf39549f31f63238">M_io_ble_create_with_service</a> (<a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> **io_out, const char *service_uuid, M_uint64 timeout_ms)</td></tr>
+<tr class="separator:ga6fe88e03f23ecdc6bf39549f31f63238"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac54443e69b72bbe58f9ad00536bcdb73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__m__io.html#ga2d3bea9aaa4491c3c8dad94cf24498a2">M_io_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io__ble.html#gac54443e69b72bbe58f9ad00536bcdb73">M_io_ble_set_notify</a> (<a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *io, const char *service_uuid, const char *characteristic_uuid, M_bool enable)</td></tr>
 <tr class="separator:gac54443e69b72bbe58f9ad00536bcdb73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad4b09595db7db269bf09517806ffb73a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__m__list__str.html#ga6de38b5604cb0dee336dccb52b5ae077">M_list_str_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io__ble.html#gad4b09595db7db269bf09517806ffb73a">M_io_ble_get_services</a> (<a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *io)</td></tr>
@@ -1349,6 +1351,49 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga6fe88e03f23ecdc6bf39549f31f63238"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__m__io.html#ga2d3bea9aaa4491c3c8dad94cf24498a2">M_io_error_t</a> M_io_ble_create_with_service </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> **&#160;</td>
+          <td class="paramname"><em>io_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>service_uuid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">M_uint64&#160;</td>
+          <td class="paramname"><em>timeout_ms</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create a ble connection to a device that provides a given service.</p>
+<p>This connects to the first device found exposing the requested service.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">io_out</td><td>io object for communication. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">service_uuid</td><td>UUID of service. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout_ms</td><td>If the device has not already been seen a scan will be performed. This time out is how long we should wait to search for the device.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Result. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="gac54443e69b72bbe58f9ad00536bcdb73"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1812,7 +1857,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Feb 20 2018 20:51:57 for Mstdlib-1.0.0 by
+    <li class="footer">Generated on Tue Feb 20 2018 22:46:28 for Mstdlib-1.0.0 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

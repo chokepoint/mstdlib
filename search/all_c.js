@@ -1004,6 +1004,7 @@ var searchData=
   ['m_5fio_5fadd_5fbwshaping',['M_io_add_bwshaping',['../group__m__io__bwshaping.html#ga4b5ae13a6311fbd7554f2d952e8d5bd9',1,'m_io_bwshaping.h']]],
   ['m_5fio_5fadd_5ftrace',['M_io_add_trace',['../group__m__io__trace.html#ga3edd3da8777f275f6a3d9891650bbeda',1,'m_io_trace.h']]],
   ['m_5fio_5fble_5fcreate',['M_io_ble_create',['../group__m__io__ble.html#ga2959840fffe0831d1851e0cab4626814',1,'m_io_ble.h']]],
+  ['m_5fio_5fble_5fcreate_5fwith_5fservice',['M_io_ble_create_with_service',['../group__m__io__ble.html#ga6fe88e03f23ecdc6bf39549f31f63238',1,'m_io_ble.h']]],
   ['m_5fio_5fble_5fenum',['M_io_ble_enum',['../group__m__io__ble.html#gafa447c64d709dfcbe731a3695692fc04',1,'m_io_ble.h']]],
   ['m_5fio_5fble_5fenum_5fconnected',['M_io_ble_enum_connected',['../group__m__io__ble.html#ga736f6f661809eb4ca69cae0aa71fa7b1',1,'m_io_ble.h']]],
   ['m_5fio_5fble_5fenum_5fcount',['M_io_ble_enum_count',['../group__m__io__ble.html#gaa81513e26c53d16d75ef998a8572dc01',1,'m_io_ble.h']]],
