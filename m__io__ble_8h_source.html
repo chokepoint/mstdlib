@@ -155,16 +155,16 @@ $(document).ready(function(){initNavTree('m__io__ble_8h_source.html','');});
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"> * provides services the application wants to use. A good example is a heart rate monitor.</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"> * A health app doesn&#39;t care which heart rate monitor is being used it only cares about</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"> * getting hear rate data. Typically, the user will be presented with a list of suitable</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"> * getting heart rate data. Typically, the user will be presented with a list of suitable</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"> * devices in case multiple devices are detected (for example, multiple people going on</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"> * a bike ride together).</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"> * Since there is no pairing the device much be found by scanning for available devices.</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"> * This happen in two ways. First M_io_ble_scan will look for and cache devices that can</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"> * Since there is no pairing the device must be found by scanning for available devices.</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"> * This happens in two ways. First, M_io_ble_scan will look for and cache devices that can</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"> * be seen by the OS. During a scan, stale devices (over 15 minutes old) will be removed.</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"> * All devices that have been found during a scan (excluding ones that have been pruned)</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"> * be listed as part of device enumeration. This means devices may no longer be present.</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"> * will be listed as part of device enumeration. This means devices may no longer be present.</span></div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"> * Such as an iPhone being seen during scanning and later the owner of the phone leaving</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"> * the room. There are no OS level events to notify that this has happened. At which</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"> * point the seen device cache may be stale.</span></div>
@@ -181,10 +181,10 @@ $(document).ready(function(){initNavTree('m__io__ble_8h_source.html','');});
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment"> * the Bluetooth GATT specifications.</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment"> * Since there are multiple, potentially, read and write end points it is required</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment"> * to specify the service and characteristic UUIDs. A write event much have them</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment"> * to specify the service and characteristic UUIDs. A write event must have them</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment"> * specified using the M_io_meta_t and associated BLE meta functions. A read will</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment"> * fill a provided meta object with the service and characteristic the data came from.</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment"> * This means only the read and write meta functions can be use with BLE. The none-meta</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment"> * This means only the read and write meta functions can be use with BLE. The non-meta</span></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"> * functions will return an error.</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment"> * Characteristics can have multiple properties.</span></div>
@@ -194,7 +194,7 @@ $(document).ready(function(){initNavTree('m__io__ble_8h_source.html','');});
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment"> * - Write</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment"> * - Write without response</span></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment"> * BLE by default is not a stream based protocol like serial, HID, or Bluetooth classic.</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment"> * BLE by default is not a stream-based protocol like serial, HID, or Bluetooth classic.</span></div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment"> * Characteristics with the read property can be requested to read data. This is an async</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment"> * request. M_io_ble facilitates this by using M_io_write_meta with a property indicator</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment"> * that specifies data is not being written but a request for read is being sent.</span></div>
@@ -207,13 +207,13 @@ $(document).ready(function(){initNavTree('m__io__ble_8h_source.html','');});
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment"> * a heart rate monitor could notify every 2 seconds even though it&#39;s reading every 100 ms. A</span></div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment"> * time service might send an event every second or it might send an event every minute.</span></div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment"> * Characteristics won&#39;t receive read events be default. They need to be subscribed to first.</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment"> * Characteristics won&#39;t receive read events by default. They need to be subscribed to first.</span></div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment"> * Subscripts will not service a disconnect or destroy of an io object. Also, not all characteristics</span></div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment"> * support this property even if it supports read. Conversely some support notify/indicate but</span></div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment"> * not read.</span></div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment"> * Write will write data to the device and the OS will issue an event whether the write as</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment"> * successful or failed. Mstdlib uses this to determine if there was a write error and will</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment"> * Write will write data to the device and the OS will issue an event whether the write</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment"> * succeeded or failed. Mstdlib uses this to determine if there was a write error and will</span></div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment"> * block subsequent writes (returns WOULDBLOCK) until an outstanding write has completed.</span></div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment"> * Write without response is a blind write. No result is requested from the OS. The state</span></div>
@@ -224,11 +224,11 @@ $(document).ready(function(){initNavTree('m__io__ble_8h_source.html','');});
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment"> * BLE events are only delivered to the main run loop. This is a design decision by Apple.</span></div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment"> * It is not possible to use an different run loop to receive events like can be done</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment"> * with classic Bluetooth or HID. BLE events are none blocking so there shouldn&#39;t be</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment"> * with classic Bluetooth or HID. BLE events are non-blocking so there shouldn&#39;t be any</span></div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment"> * performance impact with the events being delivered. As little work as possible is</span></div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment"> * performed during event processing to limit any impact of this design requirement.</span></div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment"> * A C application will need to manually start the macOS main runloop otherwise no events</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment"> * A C application will need to manually start the macOS main runloop, otherwise no events</span></div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment"> * will be delivered and no BLE operations will work.</span></div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment"> * ### Examples</span></div>
@@ -636,7 +636,7 @@ $(document).ready(function(){initNavTree('m__io__ble_8h_source.html','');});
 <div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;<span class="comment"> *             M_io_read_meta(dio, msg, sizeof(msg)-1, &amp;len, rmeta);</span></div>
 <div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;<span class="comment"> *             msg[len]            = &#39;\0&#39;;</span></div>
 <div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;<span class="comment"> *             service_uuid        = M_io_ble_meta_get_service(dio, rmeta);</span></div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;<span class="comment"> *             characteristic_uuid = M_io_ble_meta_get_charateristic(dio, rmeta);</span></div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;<span class="comment"> *             characteristic_uuid = M_io_ble_meta_get_characteristic(dio, rmeta);</span></div>
 <div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;<span class="comment"> *             M_printf(&quot;%s - %s: %s\n&quot;, service_uuid, characteristic_uuid, msg);</span></div>
 <div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;<span class="comment"> *</span></div>
@@ -746,7 +746,7 @@ $(document).ready(function(){initNavTree('m__io__ble_8h_source.html','');});
 <div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;<span class="comment"> *             M_io_read_meta(dio, msg, sizeof(msg), &amp;len, rmeta);</span></div>
 <div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;<span class="comment"> *             msg[len]            = &#39;\0&#39;;</span></div>
 <div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;<span class="comment"> *             service_uuid        = M_io_ble_meta_get_service(dio, rmeta);</span></div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;<span class="comment"> *             characteristic_uuid = M_io_ble_meta_get_charateristic(dio, rmeta);</span></div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;<span class="comment"> *             characteristic_uuid = M_io_ble_meta_get_characteristic(dio, rmeta);</span></div>
 <div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;<span class="comment"> *             M_printf(&quot;%s - %s: %s\n&quot;, service_uuid, characteristic_uuid, msg);</span></div>
 <div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;<span class="comment"> *</span></div>
@@ -1246,7 +1246,7 @@ $(document).ready(function(){initNavTree('m__io__ble_8h_source.html','');});
 <div class="line"><a name="l01146"></a><span class="lineno"> 1146</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l01147"></a><span class="lineno"> 1147</span>&#160;<span class="comment"> * \return UUID</span></div>
 <div class="line"><a name="l01148"></a><span class="lineno"> 1148</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l01149"></a><span class="lineno"> 1149</span>&#160;M_API <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="group__m__io__ble.html#ga51c1ad36b870a95c2c00b60b961beea7">M_io_ble_meta_get_charateristic</a>(<a class="code" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *io, <a class="code" href="group__m__io.html#ga9b9493ef60e89fbb37537ec239ab2724">M_io_meta_t</a> *meta);</div>
+<div class="line"><a name="l01149"></a><span class="lineno"> 1149</span>&#160;M_API <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="group__m__io__ble.html#gaec9b32c88aace557ad6de0c5ffef1a57">M_io_ble_meta_get_characteristic</a>(<a class="code" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *io, <a class="code" href="group__m__io.html#ga9b9493ef60e89fbb37537ec239ab2724">M_io_meta_t</a> *meta);</div>
 <div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;</div>
 <div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l01152"></a><span class="lineno"> 1152</span>&#160;<span class="comment">/*! Get the write type.</span></div>
@@ -1349,11 +1349,11 @@ $(document).ready(function(){initNavTree('m__io__ble_8h_source.html','');});
 <div class="ttc" id="group__m__io__ble_html_gga4b55a7fbad9e0c4eaf609d7b0aeb93f7accf6129e087d546f30dfb69ff5d1b43b"><div class="ttname"><a href="group__m__io__ble.html#gga4b55a7fbad9e0c4eaf609d7b0aeb93f7accf6129e087d546f30dfb69ff5d1b43b">M_IO_BLE_WTYPE_WRITE</a></div><div class="ttdef"><b>Definition:</b> m_io_ble.h:916</div></div>
 <div class="ttc" id="group__m__io__ble_html_gafca547d077ba95755aca3592db88a6d9"><div class="ttname"><a href="group__m__io__ble.html#gafca547d077ba95755aca3592db88a6d9">M_io_ble_rtype_t</a></div><div class="ttdeci">M_io_ble_rtype_t</div><div class="ttdef"><b>Definition:</b> m_io_ble.h:930</div></div>
 <div class="ttc" id="group__m__io__ble_html_gacc911caf7fae020e80483314367297be"><div class="ttname"><a href="group__m__io__ble.html#gacc911caf7fae020e80483314367297be">M_io_ble_enum_destroy</a></div><div class="ttdeci">void M_io_ble_enum_destroy(M_io_ble_enum_t *btenum)</div></div>
+<div class="ttc" id="group__m__io__ble_html_gaec9b32c88aace557ad6de0c5ffef1a57"><div class="ttname"><a href="group__m__io__ble.html#gaec9b32c88aace557ad6de0c5ffef1a57">M_io_ble_meta_get_characteristic</a></div><div class="ttdeci">const char * M_io_ble_meta_get_characteristic(M_io_t *io, M_io_meta_t *meta)</div></div>
 <div class="ttc" id="group__m__io__ble_html_gga4b55a7fbad9e0c4eaf609d7b0aeb93f7ad8504bdd0202cfc4863c2d2f2421a7e3"><div class="ttname"><a href="group__m__io__ble.html#gga4b55a7fbad9e0c4eaf609d7b0aeb93f7ad8504bdd0202cfc4863c2d2f2421a7e3">M_IO_BLE_WTYPE_WRITENORESP</a></div><div class="ttdef"><b>Definition:</b> m_io_ble.h:918</div></div>
 <div class="ttc" id="group__m__io__ble_html_gad4b09595db7db269bf09517806ffb73a"><div class="ttname"><a href="group__m__io__ble.html#gad4b09595db7db269bf09517806ffb73a">M_io_ble_get_services</a></div><div class="ttdeci">M_list_str_t * M_io_ble_get_services(M_io_t *io)</div></div>
 <div class="ttc" id="group__m__io__ble_html_ga736f6f661809eb4ca69cae0aa71fa7b1"><div class="ttname"><a href="group__m__io__ble.html#ga736f6f661809eb4ca69cae0aa71fa7b1">M_io_ble_enum_connected</a></div><div class="ttdeci">M_bool M_io_ble_enum_connected(const M_io_ble_enum_t *btenum, size_t idx)</div></div>
 <div class="ttc" id="group__m__io__ble_html_ga633e0b94bcda6d3ce2f5847293a28279"><div class="ttname"><a href="group__m__io__ble.html#ga633e0b94bcda6d3ce2f5847293a28279">M_io_ble_enum_last_seen</a></div><div class="ttdeci">M_time_t M_io_ble_enum_last_seen(const M_io_ble_enum_t *btenum, size_t idx)</div></div>
-<div class="ttc" id="group__m__io__ble_html_ga51c1ad36b870a95c2c00b60b961beea7"><div class="ttname"><a href="group__m__io__ble.html#ga51c1ad36b870a95c2c00b60b961beea7">M_io_ble_meta_get_charateristic</a></div><div class="ttdeci">const char * M_io_ble_meta_get_charateristic(M_io_t *io, M_io_meta_t *meta)</div></div>
 <div class="ttc" id="group__m__io__ble_html_ga1884f2b80b9eb2c0df3b9ab44fbf6b00"><div class="ttname"><a href="group__m__io__ble.html#ga1884f2b80b9eb2c0df3b9ab44fbf6b00">M_io_ble_meta_set_write_type</a></div><div class="ttdeci">void M_io_ble_meta_set_write_type(M_io_t *io, M_io_meta_t *meta, M_io_ble_wtype_t type)</div></div>
 <div class="ttc" id="group__m__io__ble_html_ga4b55a7fbad9e0c4eaf609d7b0aeb93f7"><div class="ttname"><a href="group__m__io__ble.html#ga4b55a7fbad9e0c4eaf609d7b0aeb93f7">M_io_ble_wtype_t</a></div><div class="ttdeci">M_io_ble_wtype_t</div><div class="ttdef"><b>Definition:</b> m_io_ble.h:915</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -1362,7 +1362,7 @@ $(document).ready(function(){initNavTree('m__io__ble_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_339610ecc71d7ce7314bd6b35c841e3a.html">include</a></li><li class="navelem"><a class="el" href="dir_5493b62903dfb46fc177a51087c10595.html">mstdlib</a></li><li class="navelem"><a class="el" href="dir_783acf310e7994032d5f0ed9cac27ea1.html">io</a></li><li class="navelem"><b>m_io_ble.h</b></li>
-    <li class="footer">Generated on Tue Feb 20 2018 22:46:28 for Mstdlib-1.0.0 by
+    <li class="footer">Generated on Wed Feb 21 2018 16:19:17 for Mstdlib-1.0.0 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

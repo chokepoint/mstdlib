@@ -27,7 +27,7 @@ var group__m__io__ble =
     [ "M_io_ble_get_service_characteristics", "group__m__io__ble.html#ga16bbbbf9842a4b07302eef536d6f05ce", null ],
     [ "M_io_ble_get_max_write_sizes", "group__m__io__ble.html#gaddc03ff26e59f3cb74c86c31580d5078", null ],
     [ "M_io_ble_meta_get_service", "group__m__io__ble.html#ga769f8bf59271b5812a24dd817b260676", null ],
-    [ "M_io_ble_meta_get_charateristic", "group__m__io__ble.html#ga51c1ad36b870a95c2c00b60b961beea7", null ],
+    [ "M_io_ble_meta_get_characteristic", "group__m__io__ble.html#gaec9b32c88aace557ad6de0c5ffef1a57", null ],
     [ "M_io_ble_meta_get_write_type", "group__m__io__ble.html#gad46ca968f3d322898fea90eac3818e54", null ],
     [ "M_io_ble_meta_get_read_type", "group__m__io__ble.html#ga420beb176106ca6905a3156689d8b5d2", null ],
     [ "M_io_ble_meta_get_rssi", "group__m__io__ble.html#ga8c5405dc33555875cf9782e23652eb7f", null ],

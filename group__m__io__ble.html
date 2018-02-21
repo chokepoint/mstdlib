@@ -163,8 +163,8 @@ Functions</h2></td></tr>
 <tr class="separator:gaddc03ff26e59f3cb74c86c31580d5078"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga769f8bf59271b5812a24dd817b260676"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io__ble.html#ga769f8bf59271b5812a24dd817b260676">M_io_ble_meta_get_service</a> (<a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *io, <a class="el" href="group__m__io.html#ga9b9493ef60e89fbb37537ec239ab2724">M_io_meta_t</a> *meta)</td></tr>
 <tr class="separator:ga769f8bf59271b5812a24dd817b260676"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga51c1ad36b870a95c2c00b60b961beea7"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io__ble.html#ga51c1ad36b870a95c2c00b60b961beea7">M_io_ble_meta_get_charateristic</a> (<a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *io, <a class="el" href="group__m__io.html#ga9b9493ef60e89fbb37537ec239ab2724">M_io_meta_t</a> *meta)</td></tr>
-<tr class="separator:ga51c1ad36b870a95c2c00b60b961beea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaec9b32c88aace557ad6de0c5ffef1a57"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io__ble.html#gaec9b32c88aace557ad6de0c5ffef1a57">M_io_ble_meta_get_characteristic</a> (<a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *io, <a class="el" href="group__m__io.html#ga9b9493ef60e89fbb37537ec239ab2724">M_io_meta_t</a> *meta)</td></tr>
+<tr class="separator:gaec9b32c88aace557ad6de0c5ffef1a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad46ca968f3d322898fea90eac3818e54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__m__io__ble.html#ga4b55a7fbad9e0c4eaf609d7b0aeb93f7">M_io_ble_wtype_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io__ble.html#gad46ca968f3d322898fea90eac3818e54">M_io_ble_meta_get_write_type</a> (<a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *io, <a class="el" href="group__m__io.html#ga9b9493ef60e89fbb37537ec239ab2724">M_io_meta_t</a> *meta)</td></tr>
 <tr class="separator:gad46ca968f3d322898fea90eac3818e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga420beb176106ca6905a3156689d8b5d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__m__io__ble.html#gafca547d077ba95755aca3592db88a6d9">M_io_ble_rtype_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__m__io__ble.html#ga420beb176106ca6905a3156689d8b5d2">M_io_ble_meta_get_read_type</a> (<a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *io, <a class="el" href="group__m__io.html#ga9b9493ef60e89fbb37537ec239ab2724">M_io_meta_t</a> *meta)</td></tr>
@@ -188,12 +188,12 @@ Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>iOS also supports an Apple proprietary system known as Made for iPhone/iPod/iPad (MFi). MFi uses ble but is handled differently. It's supposed though the m_io_mfi layer. MFi is also known as the External Accessory / EAAccessory protocol.</dd></dl>
 <h2>Overview</h2>
 <p>BLE was designed to keep energy consumption to a minimum and allow for seamless device access. Unlike Bluetooth classic, devices are not paired to the system. Typical use is to scan for available devices, inspect their services, and connect to a device that provides services the application wants to use. A good example is a heart rate monitor.</p>
-<p>A health app doesn't care which heart rate monitor is being used it only cares about getting hear rate data. Typically, the user will be presented with a list of suitable devices in case multiple devices are detected (for example, multiple people going on a bike ride together).</p>
-<p>Since there is no pairing the device much be found by scanning for available devices. This happen in two ways. First M_io_ble_scan will look for and cache devices that can be seen by the OS. During a scan, stale devices (over 15 minutes old) will be removed.</p>
-<p>All devices that have been found during a scan (excluding ones that have been pruned) be listed as part of device enumeration. This means devices may no longer be present. Such as an iPhone being seen during scanning and later the owner of the phone leaving the room. There are no OS level events to notify that this has happened. At which point the seen device cache may be stale.</p>
+<p>A health app doesn't care which heart rate monitor is being used it only cares about getting heart rate data. Typically, the user will be presented with a list of suitable devices in case multiple devices are detected (for example, multiple people going on a bike ride together).</p>
+<p>Since there is no pairing the device must be found by scanning for available devices. This happens in two ways. First, M_io_ble_scan will look for and cache devices that can be seen by the OS. During a scan, stale devices (over 15 minutes old) will be removed.</p>
+<p>All devices that have been found during a scan (excluding ones that have been pruned) will be listed as part of device enumeration. This means devices may no longer be present. Such as an iPhone being seen during scanning and later the owner of the phone leaving the room. There are no OS level events to notify that this has happened. At which point the seen device cache may be stale.</p>
 <p>The other way a scan can be initiated is by trying to connect to a device that has not been seen. Opening a device requires specifying the UUID of the device and if not found a scan will be started internally for either the duration of the timeout or until the device has been found. This can cause a delay between trying to open a device and receiving CONNECT or ERROR events.</p>
 <p>BLE devices provide services and there can be multiple services. Services provide characteristics and there can be multiple characteristics per service. Both services and characteristics can be defined using standardized profiles. See the Bluetooth GATT specifications.</p>
-<p>Since there are multiple, potentially, read and write end points it is required to specify the service and characteristic UUIDs. A write event much have them specified using the M_io_meta_t and associated BLE meta functions. A read will fill a provided meta object with the service and characteristic the data came from. This means only the read and write meta functions can be use with BLE. The none-meta functions will return an error.</p>
+<p>Since there are multiple, potentially, read and write end points it is required to specify the service and characteristic UUIDs. A write event must have them specified using the M_io_meta_t and associated BLE meta functions. A read will fill a provided meta object with the service and characteristic the data came from. This means only the read and write meta functions can be use with BLE. The non-meta functions will return an error.</p>
 <p>Characteristics can have multiple properties.</p>
 <ul>
 <li>Read</li>
@@ -202,14 +202,14 @@ Functions</h2></td></tr>
 <li>Write</li>
 <li>Write without response</li>
 </ul>
-<p>BLE by default is not a stream based protocol like serial, HID, or Bluetooth classic. Characteristics with the read property can be requested to read data. This is an async request. M_io_ble facilitates this by using M_io_write_meta with a property indicator that specifies data is not being written but a request for read is being sent.</p>
+<p>BLE by default is not a stream-based protocol like serial, HID, or Bluetooth classic. Characteristics with the read property can be requested to read data. This is an async request. M_io_ble facilitates this by using M_io_write_meta with a property indicator that specifies data is not being written but a request for read is being sent.</p>
 <p>Characteristics with the notify or indicate property can be subscribed to which will have them issue read events similar to a stream protocol. Reads will still require a meta object to specify which service and characteristic the data is from. Manual read requests may still be necessary. Notify and Indicate events are left to the device to imitate. The device may have internal rules which limit how often events are triggered. For example a heart rate monitor could notify every 2 seconds even though it's reading every 100 ms. A time service might send an event every second or it might send an event every minute.</p>
-<p>Characteristics won't receive read events be default. They need to be subscribed to first. Subscripts will not service a disconnect or destroy of an io object. Also, not all characteristics support this property even if it supports read. Conversely some support notify/indicate but not read.</p>
-<p>Write will write data to the device and the OS will issue an event whether the write as successful or failed. Mstdlib uses this to determine if there was a write error and will block subsequent writes (returns WOULDBLOCK) until an outstanding write has completed.</p>
+<p>Characteristics won't receive read events by default. They need to be subscribed to first. Subscripts will not service a disconnect or destroy of an io object. Also, not all characteristics support this property even if it supports read. Conversely some support notify/indicate but not read.</p>
+<p>Write will write data to the device and the OS will issue an event whether the write succeeded or failed. Mstdlib uses this to determine if there was a write error and will block subsequent writes (returns WOULDBLOCK) until an outstanding write has completed.</p>
 <p>Write without response is a blind write. No result is requested from the OS. The state of the write is not known after it is sent.</p>
 <h2>macOS requirements</h2>
-<p>BLE events are only delivered to the main run loop. This is a design decision by Apple. It is not possible to use an different run loop to receive events like can be done with classic Bluetooth or HID. BLE events are none blocking so there shouldn't be performance impact with the events being delivered. As little work as possible is performed during event processing to limit any impact of this design requirement.</p>
-<p>A C application will need to manually start the macOS main runloop otherwise no events will be delivered and no BLE operations will work.</p>
+<p>BLE events are only delivered to the main run loop. This is a design decision by Apple. It is not possible to use an different run loop to receive events like can be done with classic Bluetooth or HID. BLE events are non-blocking so there shouldn't be any performance impact with the events being delivered. As little work as possible is performed during event processing to limit any impact of this design requirement.</p>
+<p>A C application will need to manually start the macOS main runloop, otherwise no events will be delivered and no BLE operations will work.</p>
 <h3>Examples</h3>
 <h4>Application that scans for 30 seconds and enumerates all devices and their services that were seen.</h4>
 <div class="fragment"><div class="line"><span class="comment">// Build:</span></div>
@@ -596,7 +596,7 @@ Functions</h2></td></tr>
 <div class="line">            <a class="code" href="group__m__io.html#ga19356ecc08acdc8557d315c7457fe075">M_io_read_meta</a>(dio, msg, <span class="keyword">sizeof</span>(msg)-1, &amp;len, rmeta);</div>
 <div class="line">            msg[len]            = <span class="charliteral">&#39;\0&#39;</span>;</div>
 <div class="line">            service_uuid        = <a class="code" href="group__m__io__ble.html#ga769f8bf59271b5812a24dd817b260676">M_io_ble_meta_get_service</a>(dio, rmeta);</div>
-<div class="line">            characteristic_uuid = <a class="code" href="group__m__io__ble.html#ga51c1ad36b870a95c2c00b60b961beea7">M_io_ble_meta_get_charateristic</a>(dio, rmeta);</div>
+<div class="line">            characteristic_uuid = <a class="code" href="group__m__io__ble.html#gaec9b32c88aace557ad6de0c5ffef1a57">M_io_ble_meta_get_characteristic</a>(dio, rmeta);</div>
 <div class="line"></div>
 <div class="line">            <a class="code" href="group__m__fmt.html#gae54b252ea2bcf34b09ef1fa0f134ffa8">M_printf</a>(<span class="stringliteral">&quot;%s - %s: %s\n&quot;</span>, service_uuid, characteristic_uuid, msg);</div>
 <div class="line"></div>
@@ -702,7 +702,7 @@ Functions</h2></td></tr>
 <div class="line">            <a class="code" href="group__m__io.html#ga19356ecc08acdc8557d315c7457fe075">M_io_read_meta</a>(dio, msg, <span class="keyword">sizeof</span>(msg), &amp;len, rmeta);</div>
 <div class="line">            msg[len]            = <span class="charliteral">&#39;\0&#39;</span>;</div>
 <div class="line">            service_uuid        = <a class="code" href="group__m__io__ble.html#ga769f8bf59271b5812a24dd817b260676">M_io_ble_meta_get_service</a>(dio, rmeta);</div>
-<div class="line">            characteristic_uuid = <a class="code" href="group__m__io__ble.html#ga51c1ad36b870a95c2c00b60b961beea7">M_io_ble_meta_get_charateristic</a>(dio, rmeta);</div>
+<div class="line">            characteristic_uuid = <a class="code" href="group__m__io__ble.html#gaec9b32c88aace557ad6de0c5ffef1a57">M_io_ble_meta_get_characteristic</a>(dio, rmeta);</div>
 <div class="line"></div>
 <div class="line">            <a class="code" href="group__m__fmt.html#gae54b252ea2bcf34b09ef1fa0f134ffa8">M_printf</a>(<span class="stringliteral">&quot;%s - %s: %s\n&quot;</span>, service_uuid, characteristic_uuid, msg);</div>
 <div class="line"></div>
@@ -1580,12 +1580,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga51c1ad36b870a95c2c00b60b961beea7"></a>
+<a class="anchor" id="gaec9b32c88aace557ad6de0c5ffef1a57"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* M_io_ble_meta_get_charateristic </td>
+          <td class="memname">const char* M_io_ble_meta_get_characteristic </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__m__io.html#ga845c131d8520206a2a7a9219d1bd1932">M_io_t</a> *&#160;</td>
           <td class="paramname"><em>io</em>, </td>
@@ -1857,7 +1857,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Feb 20 2018 22:46:28 for Mstdlib-1.0.0 by
+    <li class="footer">Generated on Wed Feb 21 2018 16:19:18 for Mstdlib-1.0.0 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
