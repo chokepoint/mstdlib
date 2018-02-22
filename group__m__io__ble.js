@@ -5,11 +5,13 @@ var group__m__io__ble =
       [ "M_IO_BLE_WTYPE_WRITE", "group__m__io__ble.html#gga4b55a7fbad9e0c4eaf609d7b0aeb93f7accf6129e087d546f30dfb69ff5d1b43b", null ],
       [ "M_IO_BLE_WTYPE_WRITENORESP", "group__m__io__ble.html#gga4b55a7fbad9e0c4eaf609d7b0aeb93f7ad8504bdd0202cfc4863c2d2f2421a7e3", null ],
       [ "M_IO_BLE_WTYPE_REQVAL", "group__m__io__ble.html#gga4b55a7fbad9e0c4eaf609d7b0aeb93f7a4a81473ebc759f08223e87c2880a5d9a", null ],
-      [ "M_IO_BLE_WTYPE_REQRSSI", "group__m__io__ble.html#gga4b55a7fbad9e0c4eaf609d7b0aeb93f7adb4772c391a89c7d256090408b432803", null ]
+      [ "M_IO_BLE_WTYPE_REQRSSI", "group__m__io__ble.html#gga4b55a7fbad9e0c4eaf609d7b0aeb93f7adb4772c391a89c7d256090408b432803", null ],
+      [ "M_IO_BLE_WTYPE_REQNOTIFY", "group__m__io__ble.html#gga4b55a7fbad9e0c4eaf609d7b0aeb93f7a19f3e75c0718ad48d801e6eb16059d5f", null ]
     ] ],
     [ "M_io_ble_rtype_t", "group__m__io__ble.html#gafca547d077ba95755aca3592db88a6d9", [
       [ "M_IO_BLE_RTYPE_READ", "group__m__io__ble.html#ggafca547d077ba95755aca3592db88a6d9a808c3323c4430d8deecc987e77e7114b", null ],
-      [ "M_IO_BLE_RTYPE_RSSI", "group__m__io__ble.html#ggafca547d077ba95755aca3592db88a6d9a3794d22409c83ed0b73e03c73d966f0e", null ]
+      [ "M_IO_BLE_RTYPE_RSSI", "group__m__io__ble.html#ggafca547d077ba95755aca3592db88a6d9a3794d22409c83ed0b73e03c73d966f0e", null ],
+      [ "M_IO_BLE_RTYPE_NOTIFY", "group__m__io__ble.html#ggafca547d077ba95755aca3592db88a6d9a3d8826ef69e30f206b864deb2d0ffaf7", null ]
     ] ],
     [ "M_io_ble_scan", "group__m__io__ble.html#ga5a86e8322afb694600d6115720c8cb37", null ],
     [ "M_io_ble_enum", "group__m__io__ble.html#gafa447c64d709dfcbe731a3695692fc04", null ],
@@ -22,7 +24,6 @@ var group__m__io__ble =
     [ "M_io_ble_enum_last_seen", "group__m__io__ble.html#ga633e0b94bcda6d3ce2f5847293a28279", null ],
     [ "M_io_ble_create", "group__m__io__ble.html#ga2959840fffe0831d1851e0cab4626814", null ],
     [ "M_io_ble_create_with_service", "group__m__io__ble.html#ga6fe88e03f23ecdc6bf39549f31f63238", null ],
-    [ "M_io_ble_set_notify", "group__m__io__ble.html#gac54443e69b72bbe58f9ad00536bcdb73", null ],
     [ "M_io_ble_get_services", "group__m__io__ble.html#gad4b09595db7db269bf09517806ffb73a", null ],
     [ "M_io_ble_get_service_characteristics", "group__m__io__ble.html#ga16bbbbf9842a4b07302eef536d6f05ce", null ],
     [ "M_io_ble_get_max_write_sizes", "group__m__io__ble.html#gaddc03ff26e59f3cb74c86c31580d5078", null ],
@@ -33,5 +34,6 @@ var group__m__io__ble =
     [ "M_io_ble_meta_get_rssi", "group__m__io__ble.html#ga8c5405dc33555875cf9782e23652eb7f", null ],
     [ "M_io_ble_meta_set_service", "group__m__io__ble.html#gab02e3ad2ccd243ce6e994ef4ab6fc50d", null ],
     [ "M_io_ble_meta_set_characteristic", "group__m__io__ble.html#gaf9fa5c479c7409045d6f1c3122e95056", null ],
+    [ "M_io_ble_meta_set_notify", "group__m__io__ble.html#gae8a0454f1435a66dd00d06f4daf9a7b6", null ],
     [ "M_io_ble_meta_set_write_type", "group__m__io__ble.html#ga1884f2b80b9eb2c0df3b9ab44fbf6b00", null ]
 ];
