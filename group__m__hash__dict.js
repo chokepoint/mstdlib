@@ -17,7 +17,8 @@ var group__m__hash__dict =
       [ "M_HASH_DICT_MULTI_CASECMP", "group__m__hash__dict.html#gga3cd61870713be96a9475f3669b629deca907662a427d626f178d07be674040864", null ]
     ] ],
     [ "M_hash_dict_ser_flag_t", "group__m__hash__dict.html#gae8e126fc4b690521e5b102964cb16f12", [
-      [ "M_HASH_DICT_SER_FLAG_NONE", "group__m__hash__dict.html#ggae8e126fc4b690521e5b102964cb16f12aec0cca483330a8f1513846b7cb267024", null ]
+      [ "M_HASH_DICT_SER_FLAG_NONE", "group__m__hash__dict.html#ggae8e126fc4b690521e5b102964cb16f12aec0cca483330a8f1513846b7cb267024", null ],
+      [ "M_HASH_DICT_SER_FLAG_ALWAYS_QUOTE", "group__m__hash__dict.html#ggae8e126fc4b690521e5b102964cb16f12ae8eb8370df83083024d6cb5a87d4b4d0", null ]
     ] ],
     [ "M_hash_dict_deser_flag_t", "group__m__hash__dict.html#ga5cec4c0a3e38668583617be0f030acf4", [
       [ "M_HASH_DICT_DESER_FLAG_NONE", "group__m__hash__dict.html#gga5cec4c0a3e38668583617be0f030acf4afcd6254f9a9d7885f1ba782dcadce76e", null ],
@@ -43,6 +44,7 @@ var group__m__hash__dict =
     [ "M_hash_dict_enumerate_free", "group__m__hash__dict.html#ga12154e881606ff70c01fa38b443602f2", null ],
     [ "M_hash_dict_merge", "group__m__hash__dict.html#gae24445a653a833953a95ebe6d5419daf", null ],
     [ "M_hash_dict_duplicate", "group__m__hash__dict.html#ga39cda49e0de0719583f1b8ebabd59338", null ],
+    [ "M_hash_dict_serialize_buf", "group__m__hash__dict.html#ga1263fa42ecb9cb266a1d9a1828ad2a25", null ],
     [ "M_hash_dict_serialize", "group__m__hash__dict.html#gaa0fe0effa88cfe5a9b0d96002b13a1fc", null ],
     [ "M_hash_dict_deserialize", "group__m__hash__dict.html#gac340201ac0711418472ba7031c152fb2", null ]
 ];

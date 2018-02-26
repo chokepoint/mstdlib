@@ -342,6 +342,7 @@ var searchData=
   ['m_5fhash_5fdict_5fnum_5fkeys',['M_hash_dict_num_keys',['../group__m__hash__dict.html#ga623603be2f599b9a51b6ddf4cfbcfdbd',1,'m_hash_dict.h']]],
   ['m_5fhash_5fdict_5fremove',['M_hash_dict_remove',['../group__m__hash__dict.html#gadaf9b48c2d289ed1ce8b31eedcbda85f',1,'m_hash_dict.h']]],
   ['m_5fhash_5fdict_5fserialize',['M_hash_dict_serialize',['../group__m__hash__dict.html#gaa0fe0effa88cfe5a9b0d96002b13a1fc',1,'m_hash_dict.h']]],
+  ['m_5fhash_5fdict_5fserialize_5fbuf',['M_hash_dict_serialize_buf',['../group__m__hash__dict.html#ga1263fa42ecb9cb266a1d9a1828ad2a25',1,'m_hash_dict.h']]],
   ['m_5fhash_5fdict_5fsize',['M_hash_dict_size',['../group__m__hash__dict.html#ga6e683d4548d75023d7ee2022cf040d39',1,'m_hash_dict.h']]],
   ['m_5fhash_5ffunc_5fhash_5fstr',['M_hash_func_hash_str',['../group__m__hash__func.html#gad2ec0ce7f93f6afd65958603b5d51fd2',1,'m_hash_func.h']]],
   ['m_5fhash_5ffunc_5fhash_5fstr_5fcasecmp',['M_hash_func_hash_str_casecmp',['../group__m__hash__func.html#gab7607d9e7230fcb9e72cae1b29b429c8',1,'m_hash_func.h']]],
